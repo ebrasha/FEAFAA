@@ -1,0 +1,28 @@
+C:\bit9prog\dev\FEAFAA ALL\v03\SetupFEAFAA\bin\Debug\cab1.cab
+C:\bit9prog\dev\FEAFAA ALL\v03\SetupFEAFAA\bin\Debug\SetupFEAFAA.msi
+C:\bit9prog\dev\FEAFAA ALL\v03\SetupFEAFAA\bin\Debug\SetupFEAFAA.wixpdb
+obj\Debug\Product.wixobj
+obj\Debug\SetupFEAFAA.wixproj.BindContentsFileListnull.txt
+obj\Debug\SetupFEAFAA.wixproj.BindOutputsFileListnull.txt
+obj\Debug\SetupFEAFAA.wixproj.BindBuiltOutputsFileListnull.txt
+C:\bit9prog\dev\FEAFAA ALL\FEAFAA v01\SetupFEAFAA\bin\Debug\cab1.cab
+C:\bit9prog\dev\FEAFAA ALL\FEAFAA v01\SetupFEAFAA\bin\Debug\SetupFEAFAA.msi
+C:\bit9prog\dev\FEAFAA ALL\FEAFAA v01\SetupFEAFAA\bin\Debug\SetupFEAFAA.wixpdb
+C:\bit9prog\dev\FEAFAA\FEAFAA 3.0 002-\SetupFEAFAA\bin\Debug\cab1.cab
+C:\bit9prog\dev\FEAFAA\FEAFAA 3.0 002-\SetupFEAFAA\bin\Debug\SetupFEAFAA.msi
+C:\bit9prog\dev\FEAFAA\FEAFAA 3.0 002-\SetupFEAFAA\bin\Debug\SetupFEAFAA.wixpdb
+C:\bit9prog\dev\FEAFAA\FEAFAA 3.0 003\SetupFEAFAA\bin\Debug\cab1.cab
+C:\bit9prog\dev\FEAFAA\FEAFAA 3.0 003\SetupFEAFAA\bin\Debug\SetupFEAFAA.msi
+C:\bit9prog\dev\FEAFAA\FEAFAA 3.0 003\SetupFEAFAA\bin\Debug\SetupFEAFAA.wixpdb
+C:\bit9prog\dev\FEAFAA\FEAFAA 3.0 003-\SetupFEAFAA\bin\Debug\cab1.cab
+C:\bit9prog\dev\FEAFAA\FEAFAA 3.0 003-\SetupFEAFAA\bin\Debug\SetupFEAFAA.msi
+C:\bit9prog\dev\FEAFAA\FEAFAA 3.0 003-\SetupFEAFAA\bin\Debug\SetupFEAFAA.wixpdb
+C:\bit9prog\dev\FEAFAA\FEAFAA 3.0 004\SetupFEAFAA\bin\Debug\cab1.cab
+C:\bit9prog\dev\FEAFAA\FEAFAA 3.0 004\SetupFEAFAA\bin\Debug\SetupFEAFAA.msi
+C:\bit9prog\dev\FEAFAA\FEAFAA 3.0 004\SetupFEAFAA\bin\Debug\SetupFEAFAA.wixpdb
+C:\bit9prog\dev\FEAFAA\FEAFAA 3.0 005\SetupFEAFAA\bin\Debug\cab1.cab
+C:\bit9prog\dev\FEAFAA\FEAFAA 3.0 005\SetupFEAFAA\bin\Debug\SetupFEAFAA.msi
+C:\bit9prog\dev\FEAFAA\FEAFAA 3.0 005\SetupFEAFAA\bin\Debug\SetupFEAFAA.wixpdb
+C:\bit9prog\dev\FEAFAA ALL\FEAFAA 2020.11.02\FEAFAA 3.0 005\SetupFEAFAA\bin\Debug\cab1.cab
+C:\bit9prog\dev\FEAFAA ALL\FEAFAA 2020.11.02\FEAFAA 3.0 005\SetupFEAFAA\bin\Debug\SetupFEAFAA.msi
+C:\bit9prog\dev\FEAFAA ALL\FEAFAA 2020.11.02\FEAFAA 3.0 005\SetupFEAFAA\bin\Debug\SetupFEAFAA.wixpdb

@@ -1,0 +1,155 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+FEAFAA
+</name>
+</assembly>
+<members>
+<member name="T:FEAFAA.My.MyWpfExtension">
+ <summary>
+ Module used to define the properties that are available in the My Namespace for WPF
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="P:FEAFAA.My.MyWpfExtension.Application">
+ <summary>
+ Returns the application object for the running application
+ </summary>
+</member>
+<member name="P:FEAFAA.My.MyWpfExtension.Computer">
+ <summary>
+ Returns information about the host computer.
+ </summary>
+</member>
+<member name="P:FEAFAA.My.MyWpfExtension.User">
+ <summary>
+ Returns information for the current user.  If you wish to run the application with the current 
+ Windows user credentials, call My.User.InitializeWithWindowsUser().
+ </summary>
+</member>
+<member name="P:FEAFAA.My.MyWpfExtension.Log">
+ <summary>
+ Returns the application log. The listeners can be configured by the application's configuration file.
+ </summary>
+</member>
+<member name="P:FEAFAA.My.MyWpfExtension.Windows">
+ <summary>
+ Returns the collection of Windows defined in the project.
+ </summary>
+</member>
+<member name="T:FEAFAA.My.Resources.Resources">
+<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+<member name="P:FEAFAA.My.Resources.Resources.ResourceManager">
+<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member>
+<member name="P:FEAFAA.My.Resources.Resources.Culture">
+<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member>
+<member name="P:FEAFAA.My.Resources.Resources.diskdrive">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:FEAFAA.My.Resources.Resources.FEAFAA">
+<summary>
+  Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
+</summary>
+</member>
+<member name="P:FEAFAA.My.Resources.Resources.folder">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="T:FEAFAA.AboutBox">
+<summary>
+AboutBox
+</summary>
+</member>
+<member name="M:FEAFAA.AboutBox.InitializeComponent">
+<summary>
+InitializeComponent
+</summary>
+</member>
+<member name="T:FEAFAA.PropertyWindow">
+<summary>
+PropertyWindow
+</summary>
+</member>
+<member name="M:FEAFAA.PropertyWindow.InitializeComponent">
+<summary>
+InitializeComponent
+</summary>
+</member>
+<member name="T:FEAFAA.WindowStress">
+<summary>
+WindowStress
+</summary>
+</member>
+<member name="M:FEAFAA.WindowStress.InitializeComponent">
+<summary>
+InitializeComponent
+</summary>
+</member>
+<member name="T:FEAFAA.Application">
+<summary>
+Application
+</summary>
+</member>
+<member name="M:FEAFAA.Application.InitializeComponent">
+<summary>
+InitializeComponent
+</summary>
+</member>
+<member name="M:FEAFAA.Application.Main">
+<summary>
+Application Entry Point.
+</summary>
+</member>
+<member name="T:FEAFAA.DataTable">
+<summary>
+DataTable
+</summary>
+</member>
+<member name="M:FEAFAA.DataTable.InitializeComponent">
+<summary>
+InitializeComponent
+</summary>
+</member>
+<member name="T:FEAFAA.DirectoryList">
+<summary>
+DirectoryList
+</summary>
+</member>
+<member name="M:FEAFAA.DirectoryList.InitializeComponent">
+<summary>
+InitializeComponent
+</summary>
+</member>
+<member name="T:FEAFAA.MainWindow">
+<summary>
+MainWindow
+</summary>
+</member>
+<member name="M:FEAFAA.MainWindow.ConvertFromLegacyPosition(System.Windows.Point,System.Windows.Point,System.Windows.Point)">
+ <summary>
+ Due to the significant plotting differences between a VB6 Picturebox
+ and a WPF Canvas, this conversion function is nessecary so that we do not have to
+ re-do all the legacy mathematics
+ </summary>
+</member>
+<member name="M:FEAFAA.MainWindow.InitializeComponent">
+<summary>
+InitializeComponent
+</summary>
+</member>
+</members>
+</doc>

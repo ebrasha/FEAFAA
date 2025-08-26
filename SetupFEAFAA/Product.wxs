@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Wix xmlns="http://schemas.microsoft.com/wix/2006/wi"><?define FEAFAA_TargetDir=$(var.FEAFAA.TargetDir)?><?define FAAMeshClassLib_TargetDir=$(var.FAAMeshClassLib.TargetDir)?><?define FEMClassLib_TargetDir=$(var.FEMClassLib.TargetDir)?>
+	<Product Id="44d46c9e-1812-4e98-a141-8f21388ad3bc" Name="FEAFAA" Language="1033" Version="3.0.0.0" Manufacturer="FAA" UpgradeCode="231da435-db4e-418c-9f9f-d23b4570e86e">
+		<Package InstallerVersion="200" Compressed="yes" InstallScope="perMachine" />
+
+		<MajorUpgrade DowngradeErrorMessage="A newer version of [ProductName] is already installed." />
+		<MediaTemplate />
+
+    <Feature Id="ProductFeature" Title="FEAFAA" Level="1">
+      <ComponentGroupRef Id="ProductComponents" />
+      <ComponentRef Id="ApplicationShorcut" />
+      <ComponentRef Id="ApplicationShorcutDesktop" />
+      <ComponentGroupRef Id="ProgramFilesFolder_files" />
+    </Feature>
+  
+  
+  
+	</Product>
+
+  <Fragment>
+    <Directory Id="TARGETDIR" Name="SourceDir">
+      <Directory Id="ProgramFilesFolder">
+        <Directory Id="INSTALLFOLDER" Name="FEAFAA">
+          <Directory Id="Library" Name="Library" />
+        </Directory>
+
+        <Directory Id="ProgramMenuFolder">
+          <Directory Id="ApplicationProgramsFolder" Name="FEAFAA" />
+        </Directory>
+        <Directory Id="DesktopFolder" Name="Desktop" />
+
+      </Directory>
+    </Directory>
+  </Fragment>
+
+
+  <Fragment>
+    <DirectoryRef Id="ApplicationProgramsFolder">
+      <Component Id="ApplicationShorcut" Guid="3a8e8e03-e36b-4873-bd29-06ae3a2ba724">
+        <Shortcut Id="ApplicationStartMenuShortcut" Name="FEAFAA" Description="FEAFAA" Target="[INSTALLFOLDER]FEAFAA"></Shortcut>
+        <RemoveFolder Id="RemoveApplicationProgramsFolder" Directory="ApplicationProgramsFolder" On="uninstall" />
+        <RegistryValue Root="HKCU" Key="Software\FEAFAA" Name="installed" Type="integer" Value="1" KeyPath="yes" />
+      </Component>
+    </DirectoryRef>
+
+    <DirectoryRef Id="DesktopFolder">
+      <Component Id="ApplicationShorcutDesktop" Guid="f851430c-9c3b-4e00-81fe-bdb207b8ed88">
+        <Shortcut Id="ApplicationDesktopShortcut" Name="FEAFAA" Description="FEAFAA" Target="[INSTALLFOLDER]FEAFAA"></Shortcut>
+        <RemoveFolder Id="RemoveDesktopFolder" Directory="DesktopFolder" On="uninstall" />
+        <RegistryValue Root="HKCU" Key="Software\FEAFAA" Name="installed" Type="integer" Value="1" KeyPath="yes" />
+      </Component>
+    </DirectoryRef>
+  </Fragment>
+
+  <Fragment>
+		<ComponentGroup Id="ProductComponents" Directory="INSTALLFOLDER">
+			<!-- TODO: Remove the comments around this Component element and the ComponentRef below in order to add resources to this installer. -->
+			<!-- <Component Id="ProductComponent"> -->
+				<!-- TODO: Insert files, registry keys, and other resources here. -->
+			<!-- </Component> -->
+			<Component Id="FEAFAA.exe" Guid="d1a41c12-623c-4df0-b9b5-c294fc9ca49b">
+			  <File Id="FEAFAA.exe" Name="FEAFAA.exe" Source="$(var.FEAFAA_TargetDir)FEAFAA.exe" />
+			</Component>
+			<Component Id="FEAFAA.exe.config" Guid="12928b85-fa34-4998-8235-ed9e44262bd8">
+			  <File Id="FEAFAA.exe.config" Name="FEAFAA.exe.config" Source="$(var.FEAFAA_TargetDir)FEAFAA.exe.config" />
+			</Component>
+			<Component Id="FAAMeshClassLib.dll" Guid="dc1f7db4-87af-40c2-a5ed-d705f1956b70">
+			  <File Id="FAAMeshClassLib.dll" Name="FAAMeshClassLib.dll" Source="$(var.FAAMeshClassLib_TargetDir)FAAMeshClassLib.dll" />
+			</Component>
+			<Component Id="FEMClassLib.dll" Guid="e73ea530-1a9b-4509-a58f-8ba7f377b9f6">
+			  <File Id="FEMClassLib.dll" Name="FEMClassLib.dll" Source="$(var.FEMClassLib_TargetDir)FEMClassLib.dll" />
+			</Component>
+		</ComponentGroup>
+	</Fragment>
+ 
+  
+    
+      
+	<Fragment>
+	  <ComponentGroup Id="ProgramFilesFolder_files" Directory="Library">
+	    <Component Id="Library_AircraftLibrary.Ext" Guid="f2486b0a-4e80-449b-a28f-a4d15ac4edb7">
+	      <File Id="Library_AircraftLibrary.Ext" Name="AircraftLibrary.Ext" Source="$(var.FEAFAA_TargetDir)Library\AircraftLibrary.Ext" />
+	    </Component>
+	    <Component Id="Library_FEAFAA.chm" Guid="04e71bac-148d-466e-aeb8-c2e72277cf75">
+	      <File Id="Library_FEAFAA.chm" Name="FEAFAA.chm" Source="$(var.FEAFAA_TargetDir)Library\FEAFAA.chm" />
+	    </Component>
+	    <Component Id="Library_NIKEStress.exe" Guid="843d944e-f099-4529-8161-294261ba6b82">
+	      <File Id="Library_NIKEStress.exe" Name="NIKEStress.exe" Source="$(var.FEAFAA_TargetDir)Library\NIKEStress.exe" />
+	    </Component>
+	    <Component Id="Library_FEAFAA.ico" Guid="02e7b27a-8adf-4852-b544-0cc144d0649a">
+	      <File Id="Library_FEAFAA.ico" Name="FEAFAA.ico" Source="$(var.FEAFAA_TargetDir)Library\FEAFAA.ico" />
+	    </Component>
+	    <Component Id="Library_Interop.Scripting.dll" Guid="2d008eb8-445a-483c-9ee4-ee8add3de2c2">
+	      <File Id="Library_Interop.Scripting.dll" Name="Interop.Scripting.dll" Source="$(var.FEAFAA_TargetDir)Library\Interop.Scripting.dll" />
+	    </Component>
+	  </ComponentGroup>
+	</Fragment>
+</Wix>

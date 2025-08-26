@@ -1,0 +1,162 @@
+C:\Users\chene\Desktop\Work\WTF\FEAFAA_WPF\FEAFAA\bin\Debug\Library\NIKEStress.exe
+C:\Users\chene\Desktop\Work\WTF\FEAFAA_WPF\FEAFAA\bin\Debug\Library\Ingrid3.dll
+C:\Users\chene\Desktop\Work\WTF\FEAFAA_WPF\FEAFAA\bin\Debug\Library\Interop.Scripting.dll
+C:\Users\chene\Desktop\Work\WTF\FEAFAA_WPF\FEAFAA\bin\Debug\Library\Nike3D.exe
+C:\Users\chene\Desktop\Work\WTF\FEAFAA_WPF\FEAFAA\bin\Debug\Library\NIKEPLOT.exe
+C:\Users\chene\Desktop\Work\WTF\FEAFAA_WPF\FEAFAA\bin\Debug\Library\AircraftLibrary.Ext
+C:\Users\chene\Desktop\Work\WTF\FEAFAA_WPF\FEAFAA\bin\Debug\Library\FEAFAA.chm
+C:\Users\chene\Desktop\Work\WTF\FEAFAA_WPF\FEAFAA\bin\Debug\FEAFAA.exe.config
+C:\Users\chene\Desktop\Work\WTF\FEAFAA_WPF\FEAFAA\bin\Debug\FEAFAA.exe
+C:\Users\chene\Desktop\Work\WTF\FEAFAA_WPF\FEAFAA\bin\Debug\FEAFAA.pdb
+C:\Users\chene\Desktop\Work\WTF\FEAFAA_WPF\FEAFAA\bin\Debug\FEAFAA.xml
+C:\Users\chene\Desktop\Work\WTF\FEAFAA_WPF\FEAFAA\obj\Debug\AboutBox.baml
+C:\Users\chene\Desktop\Work\WTF\FEAFAA_WPF\FEAFAA\obj\Debug\PropertyWindow.baml
+C:\Users\chene\Desktop\Work\WTF\FEAFAA_WPF\FEAFAA\obj\Debug\UserControls\DataTable.baml
+C:\Users\chene\Desktop\Work\WTF\FEAFAA_WPF\FEAFAA\obj\Debug\WindowStress.baml
+C:\Users\chene\Desktop\Work\WTF\FEAFAA_WPF\FEAFAA\obj\Debug\AboutBox.g.vb
+C:\Users\chene\Desktop\Work\WTF\FEAFAA_WPF\FEAFAA\obj\Debug\PropertyWindow.g.vb
+C:\Users\chene\Desktop\Work\WTF\FEAFAA_WPF\FEAFAA\obj\Debug\UserControls\DataTable.g.vb
+C:\Users\chene\Desktop\Work\WTF\FEAFAA_WPF\FEAFAA\obj\Debug\UserControls\DirectoryList.g.vb
+C:\Users\chene\Desktop\Work\WTF\FEAFAA_WPF\FEAFAA\obj\Debug\MainWindow.g.vb
+C:\Users\chene\Desktop\Work\WTF\FEAFAA_WPF\FEAFAA\obj\Debug\WindowStress.g.vb
+C:\Users\chene\Desktop\Work\WTF\FEAFAA_WPF\FEAFAA\obj\Debug\Application.g.vb
+C:\Users\chene\Desktop\Work\WTF\FEAFAA_WPF\FEAFAA\obj\Debug\FEAFAA_Content.g.vb
+C:\Users\chene\Desktop\Work\WTF\FEAFAA_WPF\FEAFAA\obj\Debug\GeneratedInternalTypeHelper.g.vb
+C:\Users\chene\Desktop\Work\WTF\FEAFAA_WPF\FEAFAA\obj\Debug\FEAFAA_MarkupCompile.cache
+C:\Users\chene\Desktop\Work\WTF\FEAFAA_WPF\FEAFAA\obj\Debug\FEAFAA_MarkupCompile.lref
+C:\Users\chene\Desktop\Work\WTF\FEAFAA_WPF\FEAFAA\obj\Debug\UserControls\DirectoryList.baml
+C:\Users\chene\Desktop\Work\WTF\FEAFAA_WPF\FEAFAA\obj\Debug\MainWindow.baml
+C:\Users\chene\Desktop\Work\WTF\FEAFAA_WPF\FEAFAA\obj\Debug\FEAFAA.g.resources
+C:\Users\chene\Desktop\Work\WTF\FEAFAA_WPF\FEAFAA\obj\Debug\FEAFAA.Resources.resources
+C:\Users\chene\Desktop\Work\WTF\FEAFAA_WPF\FEAFAA\obj\Debug\FEAFAA.vbproj.GenerateResource.Cache
+C:\Users\chene\Desktop\Work\WTF\FEAFAA_WPF\FEAFAA\obj\Debug\FEAFAA.exe
+C:\Users\chene\Desktop\Work\WTF\FEAFAA_WPF\FEAFAA\obj\Debug\FEAFAA.xml
+C:\Users\chene\Desktop\Work\WTF\FEAFAA_WPF\FEAFAA\obj\Debug\FEAFAA.pdb
+C:\Users\chene\Desktop\Work\FEAFAA_WPF 2.11\FEAFAA\bin\Debug\FEAFAA.exe.config
+C:\Users\chene\Desktop\Work\FEAFAA_WPF 2.11\FEAFAA\obj\Debug\FEAFAA.exe
+C:\Users\chene\Desktop\Work\FEAFAA_WPF 2.11\FEAFAA\obj\Debug\FEAFAA.xml
+C:\Users\chene\Desktop\Work\FEAFAA_WPF 2.11\FEAFAA\obj\Debug\FEAFAA.pdb
+C:\Users\chene\Desktop\Work\FEAFAA\FEAFAA_WPF 2.11\FEAFAA\bin\Debug\FEAFAA.exe.config
+C:\Users\chene\Desktop\Work\FEAFAA\FEAFAA_WPF 2.11\FEAFAA\obj\Debug\FEAFAA.exe
+C:\Users\chene\Desktop\Work\FEAFAA\FEAFAA_WPF 2.11\FEAFAA\obj\Debug\FEAFAA.xml
+C:\Users\chene\Desktop\Work\FEAFAA\FEAFAA_WPF 2.11\FEAFAA\obj\Debug\FEAFAA.pdb
+C:\Users\chene\Desktop\Work\FEAFAA\FEAFAA_WPF 2.11\FEAFAA\bin\Debug\Library\NIKEStress.exe
+C:\Users\chene\Desktop\Work\FEAFAA\FEAFAA_WPF 2.11\FEAFAA\bin\Debug\Library\Ingrid3.dll
+C:\Users\chene\Desktop\Work\FEAFAA\FEAFAA_WPF 2.11\FEAFAA\bin\Debug\Library\Interop.Scripting.dll
+C:\Users\chene\Desktop\Work\FEAFAA\FEAFAA_WPF 2.11\FEAFAA\bin\Debug\Library\Nike3D.exe
+C:\Users\chene\Desktop\Work\FEAFAA\FEAFAA_WPF 2.11\FEAFAA\bin\Debug\Library\NIKEPLOT.exe
+C:\Users\chene\Desktop\Work\FEAFAA\FEAFAA_WPF 2.11\FEAFAA\bin\Debug\Library\AircraftLibrary.Ext
+C:\Users\chene\Desktop\Work\FEAFAA\FEAFAA_WPF 2.11\FEAFAA\bin\Debug\Library\FEAFAA.chm
+C:\Users\chene\Desktop\Work\FEAFAA\FEAFAA_WPF 2.11\FEAFAA\bin\Debug\FEAFAA.exe
+C:\Users\chene\Desktop\Work\FEAFAA\FEAFAA_WPF 2.11\FEAFAA\bin\Debug\FEAFAA.pdb
+C:\Users\chene\Desktop\Work\FEAFAA\FEAFAA_WPF 2.11\FEAFAA\bin\Debug\FEAFAA.xml
+C:\Users\chene\Desktop\Work\FEAFAA\FEAFAA_WPF 2.11\FEAFAA\bin\Debug\MeshClassLib.dll
+C:\Users\chene\Desktop\Work\FEAFAA\FEAFAA_WPF 2.11\FEAFAA\bin\Debug\MeshClassLib.pdb
+C:\Users\chene\Desktop\Work\FEAFAA\FEAFAA_WPF 2.11\FEAFAA\bin\Debug\MeshClassLib.xml
+C:\Users\chene\Desktop\Work\FEAFAA\FEAFAA_WPF 2.11\FEAFAA\obj\Debug\FEAFAA.vbprojResolveAssemblyReference.cache
+C:\Users\chene\Desktop\Work\FEAFAA\FEAFAA_WPF 2.11\FEAFAA\obj\Debug\AboutBox.baml
+C:\Users\chene\Desktop\Work\FEAFAA\FEAFAA_WPF 2.11\FEAFAA\obj\Debug\PropertyWindow.baml
+C:\Users\chene\Desktop\Work\FEAFAA\FEAFAA_WPF 2.11\FEAFAA\obj\Debug\UserControls\DataTable.baml
+C:\Users\chene\Desktop\Work\FEAFAA\FEAFAA_WPF 2.11\FEAFAA\obj\Debug\WindowStress.baml
+C:\Users\chene\Desktop\Work\FEAFAA\FEAFAA_WPF 2.11\FEAFAA\obj\Debug\AboutBox.g.vb
+C:\Users\chene\Desktop\Work\FEAFAA\FEAFAA_WPF 2.11\FEAFAA\obj\Debug\PropertyWindow.g.vb
+C:\Users\chene\Desktop\Work\FEAFAA\FEAFAA_WPF 2.11\FEAFAA\obj\Debug\UserControls\DataTable.g.vb
+C:\Users\chene\Desktop\Work\FEAFAA\FEAFAA_WPF 2.11\FEAFAA\obj\Debug\UserControls\DirectoryList.g.vb
+C:\Users\chene\Desktop\Work\FEAFAA\FEAFAA_WPF 2.11\FEAFAA\obj\Debug\MainWindow.g.vb
+C:\Users\chene\Desktop\Work\FEAFAA\FEAFAA_WPF 2.11\FEAFAA\obj\Debug\WindowStress.g.vb
+C:\Users\chene\Desktop\Work\FEAFAA\FEAFAA_WPF 2.11\FEAFAA\obj\Debug\Application.g.vb
+C:\Users\chene\Desktop\Work\FEAFAA\FEAFAA_WPF 2.11\FEAFAA\obj\Debug\FEAFAA_Content.g.vb
+C:\Users\chene\Desktop\Work\FEAFAA\FEAFAA_WPF 2.11\FEAFAA\obj\Debug\GeneratedInternalTypeHelper.g.vb
+C:\Users\chene\Desktop\Work\FEAFAA\FEAFAA_WPF 2.11\FEAFAA\obj\Debug\FEAFAA_MarkupCompile.cache
+C:\Users\chene\Desktop\Work\FEAFAA\FEAFAA_WPF 2.11\FEAFAA\obj\Debug\FEAFAA_MarkupCompile.lref
+C:\Users\chene\Desktop\Work\FEAFAA\FEAFAA_WPF 2.11\FEAFAA\obj\Debug\UserControls\DirectoryList.baml
+C:\Users\chene\Desktop\Work\FEAFAA\FEAFAA_WPF 2.11\FEAFAA\obj\Debug\MainWindow.baml
+C:\Users\chene\Desktop\Work\FEAFAA\FEAFAA_WPF 2.11\FEAFAA\obj\Debug\FEAFAA.g.resources
+C:\Users\chene\Desktop\Work\FEAFAA\FEAFAA_WPF 2.11\FEAFAA\obj\Debug\FEAFAA.Resources.resources
+C:\Users\chene\Desktop\Work\FEAFAA\FEAFAA_WPF 2.11\FEAFAA\obj\Debug\FEAFAA.vbproj.GenerateResource.Cache
+C:\Users\chene\Desktop\FEAFAA_WPF 2.11\FEAFAA\bin\Debug\FEAFAA.exe.config
+C:\Users\chene\Desktop\FEAFAA_WPF 2.11\FEAFAA\obj\Debug\FEAFAA.exe
+C:\Users\chene\Desktop\FEAFAA_WPF 2.11\FEAFAA\obj\Debug\FEAFAA.xml
+C:\Users\chene\Desktop\FEAFAA_WPF 2.11\FEAFAA\obj\Debug\FEAFAA.pdb
+C:\Users\chene\Desktop\FEAFAA_WPF 2.11\FEAFAA\bin\Debug\Library\NIKEStress.exe
+C:\Users\chene\Desktop\FEAFAA_WPF 2.11\FEAFAA\bin\Debug\Library\Ingrid3.dll
+C:\Users\chene\Desktop\FEAFAA_WPF 2.11\FEAFAA\bin\Debug\Library\Interop.Scripting.dll
+C:\Users\chene\Desktop\FEAFAA_WPF 2.11\FEAFAA\bin\Debug\Library\Nike3D.exe
+C:\Users\chene\Desktop\FEAFAA_WPF 2.11\FEAFAA\bin\Debug\Library\NIKEPLOT.exe
+C:\Users\chene\Desktop\FEAFAA_WPF 2.11\FEAFAA\bin\Debug\Library\AircraftLibrary.Ext
+C:\Users\chene\Desktop\FEAFAA_WPF 2.11\FEAFAA\bin\Debug\Library\FEAFAA.chm
+C:\Users\chene\Desktop\FEAFAA_WPF 2.11\FEAFAA\bin\Debug\FEAFAA.exe
+C:\Users\chene\Desktop\FEAFAA_WPF 2.11\FEAFAA\bin\Debug\FEAFAA.pdb
+C:\Users\chene\Desktop\FEAFAA_WPF 2.11\FEAFAA\bin\Debug\FEAFAA.xml
+C:\Users\chene\Desktop\FEAFAA_WPF 2.11\FEAFAA\bin\Debug\MeshClassLib.dll
+C:\Users\chene\Desktop\FEAFAA_WPF 2.11\FEAFAA\bin\Debug\MeshClassLib.pdb
+C:\Users\chene\Desktop\FEAFAA_WPF 2.11\FEAFAA\bin\Debug\MeshClassLib.xml
+C:\Users\chene\Desktop\FEAFAA_WPF 2.11\FEAFAA\obj\Debug\FEAFAA.vbprojResolveAssemblyReference.cache
+C:\Users\chene\Desktop\FEAFAA_WPF 2.11\FEAFAA\obj\Debug\AboutBox.baml
+C:\Users\chene\Desktop\FEAFAA_WPF 2.11\FEAFAA\obj\Debug\PropertyWindow.baml
+C:\Users\chene\Desktop\FEAFAA_WPF 2.11\FEAFAA\obj\Debug\UserControls\DataTable.baml
+C:\Users\chene\Desktop\FEAFAA_WPF 2.11\FEAFAA\obj\Debug\WindowStress.baml
+C:\Users\chene\Desktop\FEAFAA_WPF 2.11\FEAFAA\obj\Debug\AboutBox.g.vb
+C:\Users\chene\Desktop\FEAFAA_WPF 2.11\FEAFAA\obj\Debug\PropertyWindow.g.vb
+C:\Users\chene\Desktop\FEAFAA_WPF 2.11\FEAFAA\obj\Debug\UserControls\DataTable.g.vb
+C:\Users\chene\Desktop\FEAFAA_WPF 2.11\FEAFAA\obj\Debug\UserControls\DirectoryList.g.vb
+C:\Users\chene\Desktop\FEAFAA_WPF 2.11\FEAFAA\obj\Debug\MainWindow.g.vb
+C:\Users\chene\Desktop\FEAFAA_WPF 2.11\FEAFAA\obj\Debug\WindowStress.g.vb
+C:\Users\chene\Desktop\FEAFAA_WPF 2.11\FEAFAA\obj\Debug\Application.g.vb
+C:\Users\chene\Desktop\FEAFAA_WPF 2.11\FEAFAA\obj\Debug\FEAFAA_Content.g.vb
+C:\Users\chene\Desktop\FEAFAA_WPF 2.11\FEAFAA\obj\Debug\GeneratedInternalTypeHelper.g.vb
+C:\Users\chene\Desktop\FEAFAA_WPF 2.11\FEAFAA\obj\Debug\FEAFAA_MarkupCompile.cache
+C:\Users\chene\Desktop\FEAFAA_WPF 2.11\FEAFAA\obj\Debug\FEAFAA_MarkupCompile.lref
+C:\Users\chene\Desktop\FEAFAA_WPF 2.11\FEAFAA\obj\Debug\UserControls\DirectoryList.baml
+C:\Users\chene\Desktop\FEAFAA_WPF 2.11\FEAFAA\obj\Debug\MainWindow.baml
+C:\Users\chene\Desktop\FEAFAA_WPF 2.11\FEAFAA\obj\Debug\FEAFAA.g.resources
+C:\Users\chene\Desktop\FEAFAA_WPF 2.11\FEAFAA\obj\Debug\FEAFAA.Resources.resources
+C:\Users\chene\Desktop\FEAFAA_WPF 2.11\FEAFAA\obj\Debug\FEAFAA.vbproj.GenerateResource.Cache
+C:\Users\EbraSha\Documents\EbraSha-Files\Doc\Ms Salimeh\FEAFAA 3.0 005 Source Code 2020.11..02\FEAFAA 3.0 005\FEAFAA\bin\Debug\Library\AircraftLibrary.Ext
+C:\Users\EbraSha\Documents\EbraSha-Files\Doc\Ms Salimeh\FEAFAA 3.0 005 Source Code 2020.11..02\FEAFAA 3.0 005\FEAFAA\bin\Debug\Library\FEAFAA.chm
+C:\Users\EbraSha\Documents\EbraSha-Files\Doc\Ms Salimeh\FEAFAA 3.0 005 Source Code 2020.11..02\FEAFAA 3.0 005\FEAFAA\bin\Debug\Library\NIKEStress.exe
+C:\Users\EbraSha\Documents\EbraSha-Files\Doc\Ms Salimeh\FEAFAA 3.0 005 Source Code 2020.11..02\FEAFAA 3.0 005\FEAFAA\bin\Debug\Library\FEAFAA.ico
+C:\Users\EbraSha\Documents\EbraSha-Files\Doc\Ms Salimeh\FEAFAA 3.0 005 Source Code 2020.11..02\FEAFAA 3.0 005\FEAFAA\bin\Debug\Library\Interop.Scripting.dll
+C:\Users\EbraSha\Documents\EbraSha-Files\Doc\Ms Salimeh\FEAFAA 3.0 005 Source Code 2020.11..02\FEAFAA 3.0 005\FEAFAA\bin\Debug\FEAFAA.exe.config
+C:\Users\EbraSha\Documents\EbraSha-Files\Doc\Ms Salimeh\FEAFAA 3.0 005 Source Code 2020.11..02\FEAFAA 3.0 005\FEAFAA\bin\Debug\FEAFAA.exe
+C:\Users\EbraSha\Documents\EbraSha-Files\Doc\Ms Salimeh\FEAFAA 3.0 005 Source Code 2020.11..02\FEAFAA 3.0 005\FEAFAA\bin\Debug\FEAFAA.pdb
+C:\Users\EbraSha\Documents\EbraSha-Files\Doc\Ms Salimeh\FEAFAA 3.0 005 Source Code 2020.11..02\FEAFAA 3.0 005\FEAFAA\bin\Debug\FEAFAA.xml
+C:\Users\EbraSha\Documents\EbraSha-Files\Doc\Ms Salimeh\FEAFAA 3.0 005 Source Code 2020.11..02\FEAFAA 3.0 005\FEAFAA\bin\Debug\FAAMeshClassLib.dll
+C:\Users\EbraSha\Documents\EbraSha-Files\Doc\Ms Salimeh\FEAFAA 3.0 005 Source Code 2020.11..02\FEAFAA 3.0 005\FEAFAA\bin\Debug\FEMClassLib.dll
+C:\Users\EbraSha\Documents\EbraSha-Files\Doc\Ms Salimeh\FEAFAA 3.0 005 Source Code 2020.11..02\FEAFAA 3.0 005\FEAFAA\bin\Debug\FAAMeshClassLib.pdb
+C:\Users\EbraSha\Documents\EbraSha-Files\Doc\Ms Salimeh\FEAFAA 3.0 005 Source Code 2020.11..02\FEAFAA 3.0 005\FEAFAA\bin\Debug\FAAMeshClassLib.xml
+C:\Users\EbraSha\Documents\EbraSha-Files\Doc\Ms Salimeh\FEAFAA 3.0 005 Source Code 2020.11..02\FEAFAA 3.0 005\FEAFAA\bin\Debug\FEMClassLib.pdb
+C:\Users\EbraSha\Documents\EbraSha-Files\Doc\Ms Salimeh\FEAFAA 3.0 005 Source Code 2020.11..02\FEAFAA 3.0 005\FEAFAA\bin\Debug\FEMClassLib.xml
+C:\Users\EbraSha\Documents\EbraSha-Files\Doc\Ms Salimeh\FEAFAA 3.0 005 Source Code 2020.11..02\FEAFAA 3.0 005\FEAFAA\obj\Debug\FEAFAA.vbproj.AssemblyReference.cache
+C:\Users\EbraSha\Documents\EbraSha-Files\Doc\Ms Salimeh\FEAFAA 3.0 005 Source Code 2020.11..02\FEAFAA 3.0 005\FEAFAA\obj\Debug\AboutBox.baml
+C:\Users\EbraSha\Documents\EbraSha-Files\Doc\Ms Salimeh\FEAFAA 3.0 005 Source Code 2020.11..02\FEAFAA 3.0 005\FEAFAA\obj\Debug\PropertyWindow.baml
+C:\Users\EbraSha\Documents\EbraSha-Files\Doc\Ms Salimeh\FEAFAA 3.0 005 Source Code 2020.11..02\FEAFAA 3.0 005\FEAFAA\obj\Debug\UserControls\DataTable.baml
+C:\Users\EbraSha\Documents\EbraSha-Files\Doc\Ms Salimeh\FEAFAA 3.0 005 Source Code 2020.11..02\FEAFAA 3.0 005\FEAFAA\obj\Debug\WindowStress.baml
+C:\Users\EbraSha\Documents\EbraSha-Files\Doc\Ms Salimeh\FEAFAA 3.0 005 Source Code 2020.11..02\FEAFAA 3.0 005\FEAFAA\obj\Debug\AboutBox.g.vb
+C:\Users\EbraSha\Documents\EbraSha-Files\Doc\Ms Salimeh\FEAFAA 3.0 005 Source Code 2020.11..02\FEAFAA 3.0 005\FEAFAA\obj\Debug\PropertyWindow.g.vb
+C:\Users\EbraSha\Documents\EbraSha-Files\Doc\Ms Salimeh\FEAFAA 3.0 005 Source Code 2020.11..02\FEAFAA 3.0 005\FEAFAA\obj\Debug\UserControls\DataTable.g.vb
+C:\Users\EbraSha\Documents\EbraSha-Files\Doc\Ms Salimeh\FEAFAA 3.0 005 Source Code 2020.11..02\FEAFAA 3.0 005\FEAFAA\obj\Debug\UserControls\DirectoryList.g.vb
+C:\Users\EbraSha\Documents\EbraSha-Files\Doc\Ms Salimeh\FEAFAA 3.0 005 Source Code 2020.11..02\FEAFAA 3.0 005\FEAFAA\obj\Debug\MainWindow.g.vb
+C:\Users\EbraSha\Documents\EbraSha-Files\Doc\Ms Salimeh\FEAFAA 3.0 005 Source Code 2020.11..02\FEAFAA 3.0 005\FEAFAA\obj\Debug\WindowStress.g.vb
+C:\Users\EbraSha\Documents\EbraSha-Files\Doc\Ms Salimeh\FEAFAA 3.0 005 Source Code 2020.11..02\FEAFAA 3.0 005\FEAFAA\obj\Debug\Application.g.vb
+C:\Users\EbraSha\Documents\EbraSha-Files\Doc\Ms Salimeh\FEAFAA 3.0 005 Source Code 2020.11..02\FEAFAA 3.0 005\FEAFAA\obj\Debug\FEAFAA_Content.g.vb
+C:\Users\EbraSha\Documents\EbraSha-Files\Doc\Ms Salimeh\FEAFAA 3.0 005 Source Code 2020.11..02\FEAFAA 3.0 005\FEAFAA\obj\Debug\GeneratedInternalTypeHelper.g.vb
+C:\Users\EbraSha\Documents\EbraSha-Files\Doc\Ms Salimeh\FEAFAA 3.0 005 Source Code 2020.11..02\FEAFAA 3.0 005\FEAFAA\obj\Debug\FEAFAA_MarkupCompile.cache
+C:\Users\EbraSha\Documents\EbraSha-Files\Doc\Ms Salimeh\FEAFAA 3.0 005 Source Code 2020.11..02\FEAFAA 3.0 005\FEAFAA\obj\Debug\FEAFAA_MarkupCompile.lref
+C:\Users\EbraSha\Documents\EbraSha-Files\Doc\Ms Salimeh\FEAFAA 3.0 005 Source Code 2020.11..02\FEAFAA 3.0 005\FEAFAA\obj\Debug\UserControls\DirectoryList.baml
+C:\Users\EbraSha\Documents\EbraSha-Files\Doc\Ms Salimeh\FEAFAA 3.0 005 Source Code 2020.11..02\FEAFAA 3.0 005\FEAFAA\obj\Debug\MainWindow.baml
+C:\Users\EbraSha\Documents\EbraSha-Files\Doc\Ms Salimeh\FEAFAA 3.0 005 Source Code 2020.11..02\FEAFAA 3.0 005\FEAFAA\obj\Debug\FEAFAA.g.resources
+C:\Users\EbraSha\Documents\EbraSha-Files\Doc\Ms Salimeh\FEAFAA 3.0 005 Source Code 2020.11..02\FEAFAA 3.0 005\FEAFAA\obj\Debug\FEAFAA.Resources.resources
+C:\Users\EbraSha\Documents\EbraSha-Files\Doc\Ms Salimeh\FEAFAA 3.0 005 Source Code 2020.11..02\FEAFAA 3.0 005\FEAFAA\obj\Debug\FEAFAA.vbproj.GenerateResource.cache
+C:\Users\EbraSha\Documents\EbraSha-Files\Doc\Ms Salimeh\FEAFAA 3.0 005 Source Code 2020.11..02\FEAFAA 3.0 005\FEAFAA\obj\Debug\FEAFAA.vbproj.CoreCompileInputs.cache
+C:\Users\EbraSha\Documents\EbraSha-Files\Doc\Ms Salimeh\FEAFAA 3.0 005 Source Code 2020.11..02\FEAFAA 3.0 005\FEAFAA\obj\Debug\FEAFAA.vbproj.Up2Date
+C:\Users\EbraSha\Documents\EbraSha-Files\Doc\Ms Salimeh\FEAFAA 3.0 005 Source Code 2020.11..02\FEAFAA 3.0 005\FEAFAA\obj\Debug\FEAFAA.exe
+C:\Users\EbraSha\Documents\EbraSha-Files\Doc\Ms Salimeh\FEAFAA 3.0 005 Source Code 2020.11..02\FEAFAA 3.0 005\FEAFAA\obj\Debug\FEAFAA.xml
+C:\Users\EbraSha\Documents\EbraSha-Files\Doc\Ms Salimeh\FEAFAA 3.0 005 Source Code 2020.11..02\FEAFAA 3.0 005\FEAFAA\obj\Debug\FEAFAA.pdb
+C:\Users\EbraSha\Documents\EbraSha-Files\Doc\Ms Salimeh\FEAFAA 4\FEAFAA\obj\Debug\FEAFAA.vbproj.AssemblyReference.cache
+C:\Users\EbraSha\Documents\EbraSha-Files\Doc\Ms Salimeh\FEAFAA 4\FEAFAA\obj\Debug\FEAFAA.Resources.resources
+C:\Users\EbraSha\Documents\EbraSha-Files\Doc\Ms Salimeh\FEAFAA 4\FEAFAA\obj\Debug\FEAFAA.vbproj.GenerateResource.cache
+C:\Users\EbraSha\Documents\EbraSha-Files\Doc\Ms Salimeh\FEAFAA 4\FEAFAA\obj\Debug\FEAFAA.vbproj.CoreCompileInputs.cache
+C:\Users\EbraSha\Documents\EbraSha-Files\Doc\Ms Salimeh\FEAFAA 4\FEAFAA\obj\Debug\FEAFAA.exe
+C:\Users\EbraSha\Documents\EbraSha-Files\Doc\Ms Salimeh\FEAFAA 4\FEAFAA\obj\Debug\FEAFAA.xml
+C:\Users\EbraSha\Documents\EbraSha-Files\Doc\Ms Salimeh\FEAFAA 4\FEAFAA\obj\Debug\FEAFAA.pdb

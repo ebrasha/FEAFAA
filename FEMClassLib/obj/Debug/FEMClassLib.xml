@@ -1,0 +1,1278 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+FEMClassLib
+</name>
+</assembly>
+<members>
+<member name="T:FEMClassLib.My.Resources.Resources">
+<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+<member name="P:FEMClassLib.My.Resources.Resources.ResourceManager">
+<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member>
+<member name="P:FEMClassLib.My.Resources.Resources.Culture">
+<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member>
+<member name="M:FEMClassLib.clsCom.unpkid(System.Int32[]@,System.Int32[]@,System.Int32)">
+ <summary>
+ unpack Integer data 6 Or 9 temrs
+ </summary>
+ <param name="idu"></param>
+ <param name="idp"></param>
+ <param name="itp"></param>
+</member>
+<member name="M:FEMClassLib.clsCom.unpkid(System.Int32[0:,0:]@,System.Int32,System.Int32,System.Int32[0:,0:]@,System.Int32,System.Int32,System.Int32)">
+ <summary>
+ overloaded to handle 2D array
+ </summary>
+</member>
+<member name="M:FEMClassLib.clsCom.packid(System.Int32[]@,System.Int32[]@,System.Int32)">
+ <summary>
+ pack Integer data 6 Or 9 terms
+ </summary>
+ <param name="idu"></param>
+ <param name="idp"></param>
+ <param name="itp"></param>
+</member>
+<member name="M:FEMClassLib.clsCom.packid(System.Int32[0:,0:]@,System.Int32,System.Int32,System.Int32[0:,0:]@,System.Int32,System.Int32,System.Int32)">
+ <summary>
+ overloaded to handle 2D array
+ </summary>
+</member>
+<member name="M:FEMClassLib.clsInput.areal(System.Double@,System.Double@,System.Double[],System.Double[],System.Double[],System.Double)">
+ <summary>
+ To find area And characteristic length "dx" For a slidesurface facet during initialization
+ </summary>
+</member>
+<member name="M:FEMClassLib.clsInput.blck83(System.Int32[0:,0:]@,System.Int32[0:,0:]@,System.Int32[0:,0:]@,System.Int32[0:,0:]@,System.Int32[]@,System.Int32[]@,System.Int32[]@,System.Int32[]@,System.Int32@,System.Int32@,System.Int32@,System.Int32@,System.Int32@,System.Int32[]@,System.Int32[]@)">
+ <summary>
+ reorder list of 8 node elements (with 3 dof/node) to avoid recursion during vectorized EBE operations
+ </summary>
+ <param name="idp"></param>
+ <param name="id"></param>
+ <param name="ixp"></param>
+ <param name="ix"></param>
+ <param name="iblock"></param>
+ <param name="ipoint"></param>
+ <param name="ieq"></param>
+ <param name="ireord"></param>
+ <param name="numnp"></param>
+ <param name="neq"></param>
+ <param name="numel"></param>
+ <param name="mbsize"></param>
+ <param name="nelblk"></param>
+ <param name="ielblk"></param>
+ <param name="idroer"></param>
+</member>
+<member name="M:FEMClassLib.clsInput.blkmax(System.Int32[]@,System.Int32,System.Double[0:,0:]@,System.Double@,System.Double@,System.Double@)">
+ <summary>
+ To compute bulk modulus Of Each material and accumulate the largest bulk modulus in mesh
+ (Array starts from 0 index, so while calling this check for proper mt value)
+ </summary>
+ <param name="matype"></param>
+ <param name="mt">Array starts from 0 index, so use proper mt value</param>
+ <param name="prop"></param>
+ <param name="bulkmx"></param>
+ <param name="ym"></param>
+ <param name="pr"></param>
+</member>
+<member name="M:FEMClassLib.clsInput.chardx(System.Double@,System.Double[],System.Double[],System.Double[])">
+ <summary>
+ compute characteristic length for master facet
+ </summary>
+ <param name="dx"></param>
+</member>
+<member name="M:FEMClassLib.clsInput.chgint(System.Double@,System.Double@,System.Double@,System.Double@,System.Double@,System.Double@,System.Double@,System.Double@,System.Double@,System.Double@,System.Double@,System.Double,System.Double,System.Double)">
+ <summary>
+ compute Newmark integration coefficients
+ </summary>
+</member>
+<member name="M:FEMClassLib.clsInput.counts(System.Int32[0:,0:]@,System.Int32[]@,System.Int32[]@,System.Int32,System.Int32)">
+ <summary>
+ 
+ </summary>
+ <param name="irect"></param>
+ <param name="mnn"></param>
+ <param name="nseg"></param>
+ <param name="nrt"></param>
+ <param name="nn"></param>
+</member>
+<member name="M:FEMClassLib.clsInput.crossi(System.Double[0:,0:],System.Int32@,System.Int32@,System.Double@,System.Double@,System.Int32,System.Int32,System.Int32,System.Int32)">
+ <summary>
+ perform (initialization phase)
+ </summary>
+ <param name="x"></param>
+</member>
+<member name="M:FEMClassLib.clsInput.eqnum(System.Int32[0:,0:]@,System.Double[0:,0:]@,System.Int32@,System.Int32@,System.Int32@,System.Int32@,System.Int32@,System.Int32@,System.Int32@,System.Int32@)">
+ <summary>
+ print nodal data including assigned equation numbers
+ </summary>
+ <param name="idp"></param>
+ <param name="x"></param>
+ <param name="numnp"></param>
+</member>
+<member name="M:FEMClassLib.clsInput.funct(System.Double@,System.Double@,System.Double@,System.Double@,System.Double@,System.Double@,System.Double@,System.Double@,System.Double@,System.Double@,System.Double@,System.Double@,System.Double@,System.Double@,System.Double@,System.Double@,System.Double@,System.Double@,System.Double[]@,System.Double[]@,System.Double[]@,System.Double[]@,System.Double@,System.Double@,System.Double@,System.Double@,System.Double@,System.Double@,System.Double@,System.Double@,System.Double@,System.Double@,System.Double@,System.Double@,System.Double@,System.Double@,System.Double@,System.Double@,System.Double@,System.Double,System.Double@,System.Double@,System.Double@,System.Double@,System.Double@,System.Double@)">
+ <summary>
+ 
+ </summary>
+ <param name="s"></param>
+ <param name="t"></param>
+ <returns></returns>
+</member>
+<member name="M:FEMClassLib.clsInput.intsld(System.Double[0:,0:],System.Int32[]@,System.Int32[]@,System.Int32[]@,System.Int32[]@,System.Double[]@,System.Double[]@,System.Int32[]@,System.Int32[]@,System.Int32[]@,System.Int32[]@,System.Int32[]@,System.Int32[]@,System.Int32[0:,0:]@,System.Double[0:,0:]@,System.Double[0:,0:],System.Int32[0:,0:]@,System.Int32[0:,0:]@,System.Int32[0:,0:]@,System.Double[]@,System.Double[]@,System.Double[]@,System.Double,System.Double@,System.Int32[]@,System.Double@,System.Double@,System.Double@,System.Double@,System.Double@,System.Double@,System.Double[]@,System.Int32@,System.Int32,System.Double@,System.Double,System.Int32@,System.Int32@,System.Int32@,System.Int32@,System.Int32@,System.Int32@,System.Int32@,System.Double[]@,System.Double@,System.Double@,System.Double@,System.Double@,System.Double@,System.Double@,System.Double@,System.Double@,System.Double@,System.Double@,System.Double@,System.Double@,System.Double@,System.Double@,System.Double@,System.Double@,System.Double@,System.Double,System.Double@,System.Double@,System.Double@,System.Double@,System.Double@,System.Double@)">
+ <summary>
+ enter slide surface initialization
+ </summary>
+</member>
+<member name="M:FEMClassLib.clsInput.modstf(System.Double[]@,System.Int32@,System.Double@,System.Double@,System.Int32@,System.Int32@)">
+ <summary>
+ balance stiffness parameters for slide surface facets
+ </summary>
+ <param name="stf"></param>
+ <param name="n"></param>
+ <param name="stfo"></param>
+ <param name="avgs"></param>
+ <param name="iside"></param>
+ <param name="nm"></param>
+</member>
+<member name="M:FEMClassLib.clsInput.nodesm(System.Int32[]@,System.Int32[]@,System.Int32[0:,0:]@,System.Int32[0:,0:]@,System.Int32[0:,0:]@,System.Int32)">
+ <summary>
+ module to
+ </summary>
+ <param name="nsv"></param>
+ <param name="msr"></param>
+ <param name="irects"></param>
+ <param name="irectm"></param>
+ <param name="iparm"></param>
+</member>
+<member name="M:FEMClassLib.clsInput.nsgmnt(System.Int32[0:,0:]@,System.Int32[0:,0:]@,System.Int32[0:,0:]@,System.Int32[]@,System.Int32[]@,System.Int32[]@,System.Int32[]@,System.Int32)">
+ <summary>
+ 
+ </summary>
+ <param name="iparm"></param>
+ <param name="irects"></param>
+ <param name="irectm"></param>
+ <param name="nsv"></param>
+ <param name="msr"></param>
+ <param name="nsegs"></param>
+ <param name="nsegm"></param>
+ <param name="nstl"></param>
+ <param name="nmtl"></param>
+</member>
+<member name="M:FEMClassLib.clsInput.printm(System.Int32,System.Double,System.Double[],System.Double[],System.Int32,System.Int32,System.Double,System.Double[],System.Double,System.Double[])">
+ <summary>
+ print material model input data
+ </summary>
+ <param name="n"></param>
+ <param name="den"></param>
+ <param name="prop"></param>
+ <param name="csprop"></param>
+ <param name="itype"></param>
+ <param name="nip"></param>
+ <param name="trefm"></param>
+ <param name="rdc"></param>
+ <param name="tmecc"></param>
+ <param name="headng"></param>
+</member>
+<member name="M:FEMClassLib.clsInput.ptimei(System.Int32@,System.Int32@,System.Int32@,System.Double@,System.Double[]@,System.Double[]@,System.Double[]@,System.Double@,System.Double@,System.Double@)">
+ <summary>
+ compute volume between slave node and master facet
+ used as coarse test for proximity of slave node to master facet
+ (initialization phase)
+ </summary>
+ <param name="k1"></param>
+ <param name="k2"></param>
+ <param name="k3"></param>
+ <param name="det"></param>
+</member>
+<member name="M:FEMClassLib.clsInput.setse1(System.Double[0:,0:]@,System.Int32@)">
+ <summary>
+ initialize elastic material constants
+ </summary>
+ <param name="prop"></param>
+ <param name="mt"></param>
+</member>
+<member name="M:FEMClassLib.clsInput.slavi0(System.Double[0:,0:]@,System.Int32[0:,0:]@,System.Int32[]@,System.Int32[]@,System.Int32[]@,System.Int32[]@,System.Int32[]@,System.Int32@,System.Int32@,System.Int32@,System.Int32)">
+ <summary>
+ initialize slide surface logic
+ </summary>
+ <param name="x"></param>
+ <param name="irect"></param>
+ <param name="nseg"></param>
+ <param name="lc"></param>
+ <param name="nsv"></param>
+ <param name="msr"></param>
+ <param name="iloc"></param>
+ <param name="nmn"></param>
+ <param name="nsn"></param>
+ <param name="nrt"></param>
+</member>
+<member name="M:FEMClassLib.clsInput.slavi1(System.Double[0:,0:]@,System.Int32[0:,0:]@,System.Int32[]@,System.Int32[]@,System.Int32[]@,System.Int32[]@,System.Int32[]@,System.Int32[]@,System.Int32@,System.Int32@,System.Int32@,System.Int32@,System.Int32@,System.Double@,System.Double@)">
+ <summary>
+ perform nearest-neighbor search for slide surface (initialization phase)
+ </summary>
+ <param name="x"></param>
+ <param name="irect"></param>
+ <param name="lmsr"></param>
+ <param name="msr"></param>
+ <param name="nsv"></param>
+ <param name="iloc"></param>
+ <param name="irtl"></param>
+ <param name="nseg"></param>
+ <param name="nsn"></param>
+ <param name="nmn"></param>
+ <param name="nsl"></param>
+</member>
+<member name="M:FEMClassLib.clsInput.slavi2(System.Double[0:,0:]@,System.Int32[0:,0:]@,System.Int32[]@,System.Int32[]@,System.Int32[]@,System.Int32[]@,System.Int32[]@,System.Double[]@,System.Int32@,System.Int32@,System.Int32@,System.Double[0:,0:]@,System.Int32@,System.Double@,System.Int32@,System.Boolean@,System.Double[]@,System.Double[]@,System.Double[]@,System.Int32[]@,System.Double@,System.Double@,System.Double@,System.Double@,System.Double@,System.Double@,System.Double[],System.Double[]@,System.Double@,System.Double@,System.Double@,System.Double@,System.Double@,System.Double@,System.Double@,System.Double@,System.Double@,System.Double@,System.Double@,System.Double@,System.Double@,System.Double@,System.Double@,System.Double@,System.Double@,System.Double,System.Double@,System.Double@,System.Double@,System.Double@,System.Double@,System.Double@)">
+ <summary>
+ determine if slidesurface penalty element is active (initialization phase)
+ </summary>
+ <param name="x"></param>
+ <param name="irect"></param>
+ <param name="lmsr"></param>
+ <param name="msr"></param>
+ <param name="nsv"></param>
+ <param name="iloc"></param>
+ <param name="irtl"></param>
+ <param name="stf"></param>
+ <param name="nsn"></param>
+ <param name="nmn"></param>
+ <param name="nty"></param>
+ <param name="cst"></param>
+ <param name="nnfnum"></param>
+ <param name="pend"></param>
+ <param name="istyp"></param>
+ <param name="ioff"></param>
+</member>
+<member name="M:FEMClassLib.clsInput.slinit(System.Int32[0:,0:]@,System.Int32[0:,0:]@,System.Int32[0:,0:]@,System.Int32[]@,System.Int32[]@,System.Int32[]@,System.Int32[]@,System.Int32[]@,System.Int32[]@,System.Int32[]@,System.Int32[]@,System.Double[]@,System.Double[]@,System.Int32[]@,System.Int32[]@,System.Int32[]@,System.Double[]@,System.Double[]@,System.Double[]@,System.Double[0:,0:]@,System.Int32[0:,0:]@,System.Double[0:,0:]@,System.Double[0:,0:]@,System.Double[]@,System.Double,System.Double@,System.Int32[]@,System.Double@,System.Double@,System.Double@,System.Double@,System.Double@,System.Double@,System.Double[]@,System.Int32@,System.Int32@,System.Double@,System.Double@,System.Int32@,System.Int32@,System.Int32@,System.Int32@,System.Int32@,System.Int32@,System.Int32@,System.Double[]@,System.Double@,System.Double@,System.Double@,System.Double@,System.Double@,System.Double@,System.Double@,System.Double@,System.Double@,System.Double@,System.Double@,System.Double@,System.Double@,System.Double@,System.Double@,System.Double@,System.Double@,System.Double,System.Double@,System.Double@,System.Double@,System.Double@,System.Double@,System.Double@)">
+ <summary>
+ drive slide surface initialization
+ </summary>
+ <param name="iparm"></param>
+ <param name="irects"></param>
+ <param name="irectm"></param>
+ <param name="nsv"></param>
+ <param name="msr"></param>
+ <param name="nsegs"></param>
+ <param name="nsegm"></param>
+ <param name="lnsv"></param>
+ <param name="lmsr"></param>
+ <param name="ilocs"></param>
+ <param name="ilocm"></param>
+ <param name="stfs"></param>
+ <param name="stfm"></param>
+ <param name="irtls"></param>
+ <param name="irtlm"></param>
+ <param name="mtype"></param>
+ <param name="x"></param>
+ <param name="bh"></param>
+ <param name="cst"></param>
+ <param name="rdc"></param>
+ <param name="pend"></param>
+</member>
+<member name="M:FEMClassLib.clsInput.slvage(System.Int32@,System.Decimal@,System.Decimal@)">
+ <summary>
+ module to
+ </summary>
+ <param name="ier"></param>
+ <param name="s"></param>
+ <param name="t"></param>
+</member>
+<member name="M:FEMClassLib.clsInput.st(System.Double@,System.Double@,System.Double@,System.Double@,System.Double@,System.Int32@,System.Int32,System.Double[]@,System.Double[]@,System.Double[]@,System.Int32[]@,System.Double@,System.Double@,System.Double@,System.Double[]@,System.Double@,System.Double@,System.Double@,System.Double@,System.Double@,System.Double@,System.Double@,System.Double@,System.Double@,System.Double@,System.Double@,System.Double@,System.Double@,System.Double@,System.Double@,System.Double@,System.Double@,System.Double,System.Double@,System.Double@,System.Double@,System.Double@,System.Double@,System.Double@,System.Double@,System.Double@,System.Double@)">
+ <summary>
+ Calculate curvilinear coordinates s,t on master facet
+ </summary>
+ <param name="n1"></param>
+ <param name="n2"></param>
+ <param name="n3"></param>
+ <param name="s1"></param>
+ <param name="t1"></param>
+ <param name="ier"></param>
+</member>
+<member name="M:FEMClassLib.clsInput.stiffs(System.Double[0:,0:]@,System.Int32[0:,0:]@,System.Double[]@,System.Int32[0:,0:]@,System.Int32[]@,System.Int32@,System.Int32@,System.Double@,System.Double@,System.Double@,System.Double@,System.Int32@,System.Int32@,System.Double[0:,0:]@,System.Int32,System.Double[]@,System.Double[]@,System.Double[]@,System.Double,System.Double@)">
+ <summary>
+ determine stiffness parameter for slide surface facets
+ </summary>
+ <param name="x"></param>
+ <param name="irect"></param>
+ <param name="stf"></param>
+ <param name="ibh"></param>
+ <param name="matype"></param>
+ <param name="numelh"></param>
+ <param name="nrt"></param>
+ <param name="stffac"></param>
+ <param name="dxavg"></param>
+ <param name="blkvg"></param>
+ <param name="stfvg"></param>
+ <param name="nty"></param>
+ <param name="nsn"></param>
+ <param name="nsv"></param>
+ <param name="rdc"></param>
+</member>
+<member name="M:FEMClassLib.clsInitial.basis4(System.Double@,System.Double@,System.Double[]@,System.Double[0:,0:]@)">
+ <summary>
+ evaluate bilinear shape functions and derivatives
+ </summary>
+ <param name="r"></param>
+ <param name="s"></param>
+ <param name="h"></param>
+ <param name="p"></param>
+</member>
+<member name="M:FEMClassLib.clsInitial.basis8(System.Double@,System.Double@,System.Double@,System.Double[]@,System.Double[]@,System.Double[]@,System.Double[]@,System.Double[]@,System.Double[]@,System.Double[]@)">
+ <summary>
+ evaluate trilinear shape functions and derivatives
+ </summary>
+ <param name="r"></param>
+ <param name="s"></param>
+ <param name="t"></param>
+ <param name="h"></param>
+ <param name="hix"></param>
+ <param name="hiy"></param>
+ <param name="hiz"></param>
+ <param name="pr"></param>
+ <param name="ps"></param>
+ <param name="pt"></param>
+</member>
+<member name="M:FEMClassLib.clsInitial.cklc(System.Int32@,System.Int32[]@,System.Int32@,System.Int32[]@,System.Int32@,System.Int32[]@,System.Double[]@,System.Double@,System.Double@,System.Double@,System.Int32@,System.Int32@)">
+ <summary>
+ check for applied load at time = 0
+ </summary>
+ <param name="ncnl"></param>
+ <param name="lcnl"></param>
+ <param name="npr"></param>
+ <param name="lcpr"></param>
+ <param name="npd"></param>
+ <param name="lcpd"></param>
+ <param name="fval"></param>
+ <param name="told"></param>
+ <param name="time"></param>
+ <param name="dt"></param>
+ <param name="itemp"></param>
+ <param name="nstep"></param>
+</member>
+<member name="M:FEMClassLib.clsInitial.colht(System.Int32[]@,System.Int32@,System.Int32[]@)">
+ <summary>
+ update stiffness matrix column heights(excludes diagonal)
+ </summary>
+ <param name="kht" remarks="current column heights(output updated column heights)"></param>
+ <param name="ns" remarks="number of degrees of freedom for this element"></param>
+ <param name="ld" remarks="element equation numbers"></param>
+</member>
+<member name="M:FEMClassLib.clsInitial.gethexg(System.Int32@,System.Int32[]@,System.Int32[]@,System.Int32@,System.Int32@,System.Int32@,System.Int32,System.Int32,System.Int32@)">
+ <summary>
+ return group storage length and number of elements in block
+ and set up indices for stiffness storage for incomp modes
+ </summary>
+ <param name="n"></param>
+ <param name="numelg"></param>
+ <param name="ihv"></param>
+ <param name="nelpg"></param>
+ <param name="nblk"></param>
+ <param name="length"></param>
+</member>
+<member name="M:FEMClassLib.clsInitial.in3dh(System.Int32[0:,0:]@,System.Double[0:,0:]@,System.Int32[]@,System.Double[]@,System.Double[0:,0:]@,System.Int32[0:,0:]@,System.Int32[]@,System.Int32[]@,System.Int32@,System.Int32@)">
+ <summary>
+ drive consitutive history initialization for hexahedron elements
+ </summary>
+ <param name="idp"></param>
+ <param name="x"></param>
+ <param name="matype"></param>
+ <param name="den"></param>
+ <param name="prop"></param>
+ <param name="ia"></param>
+ <param name="kht"></param>
+ <param name="ihv"></param>
+ <param name="numnp"></param>
+ <param name="nmmat"></param>
+</member>
+<member name="M:FEMClassLib.clsInitial.in3dhhv(System.Int32[0:,0:]@,System.Int32[]@,System.Int32[]@,System.Int32[]@,System.Int32@,System.Int32@)">
+ <summary>
+ set up element constitutive storage index list ihv
+ </summary>
+ <param name="ia"></param>
+ <param name="ihv"></param>
+ <param name="matype"></param>
+ <param name="numelg"></param>
+ <param name="nhexg"></param>
+ <param name="ihvct"></param>
+</member>
+<member name="M:FEMClassLib.clsInitial.initde(System.Int32[],System.Double[],System.Int32[],System.Double[0:,0:],System.Int32[0:,0:],System.Double[],System.Double[0:,0:],System.Int32,System.Double[0:,0:],System.Int32[],System.Int32[0:,0:],System.Int32,System.Int32)">
+ <summary>
+ initialize discrete elements
+ </summary>
+ <param name="npc"></param>
+ <param name="p"></param>
+ <param name="mtypde"></param>
+ <param name="cmde"></param>
+ <param name="ixde"></param>
+ <param name="sclf"></param>
+ <param name="dehv"></param>
+ <param name="nmelde"></param>
+ <param name="x"></param>
+ <param name="kht"></param>
+ <param name="idp"></param>
+ <param name="numnp"></param>
+ <param name="nmmat"></param>
+</member>
+<member name="M:FEMClassLib.clsInitial.interp(System.Double[0:,0:]@,System.Double@,System.Int32@,System.Double@,System.Double@,System.Int32@)">
+ <summary>
+ interpolate load curve values
+ </summary>
+ <param name="p"></param>
+ <param name="tau"></param>
+ <param name="numlp"></param>
+ <param name="f"></param>
+ <param name="xmag"></param>
+ <param name="ierr"></param>
+</member>
+<member name="M:FEMClassLib.clsInitial.ldcset(System.Int32,System.Double[]@,System.Int32[]@,System.Double[]@,System.Double@)">
+ <summary>
+ compute value of load curves at time value 'tt'
+ </summary>
+ <param name="fval"></param>
+ <param name="npc"></param>
+ <param name="p"></param>
+ <param name="tt"></param>
+</member>
+<member name="M:FEMClassLib.clsSolve.asmrhs(System.Double[]@,System.Double[]@,System.Double[]@,System.Double[]@,System.Double[]@,System.Double[]@,System.Double@,System.Double@,System.Int32@,System.Double@)">
+ <summary>
+ to drive assembly of residual vector, will also return element stiffnesses in some cases
+ </summary>
+ <param name="ui"></param>
+ <param name="usi"></param>
+ <param name="tvc2"></param>
+ <param name="r"></param>
+ <param name="u"></param>
+ <param name="tvc1"></param>
+ <param name="tt"></param>
+ <param name="_step"></param>
+ <param name="iopt"></param>
+ <param name="g"></param>
+</member>
+<member name="M:FEMClassLib.clsSolve.auto(System.Int32@,System.Int32@,System.Int32@,System.Boolean@)">
+ <summary>
+ to drive the auto time steppers
+ </summary>
+ <param name="ierr"></param>
+ <param name="nbcku"></param>
+ <param name="iterm"></param>
+ <param name="lretry"></param>
+</member>
+<member name="M:FEMClassLib.clsSolve.basisf(System.Double[]@,System.Double[]@,System.Double[]@,System.Int32@,System.Int32@,System.Int32@,System.Double@,System.Int32@)">
+ <summary>
+ load values of local trilinear shape ftn derivatives for current integration point
+ </summary>
+ <param name="p1"></param>
+ <param name="p2"></param>
+ <param name="p3"></param>
+ <param name="ipt"></param>
+ <param name="mattype"></param>
+ <param name="ipart"></param>
+ <param name="ro"></param>
+ <param name="ie"></param>
+</member>
+<member name="M:FEMClassLib.clsSolve.dmfm1(System.Int32,System.Double,System.Int32,System.Double,System.Double,System.Double)">
+ <summary>
+ derivative of mapping function of middle point with respect to r
+ </summary>
+ <param name="ir"></param>
+ <param name="_is"></param>
+ <param name="it"></param>
+ <param name="r"></param>
+ <param name="s"></param>
+ <param name="t"></param>
+ <returns></returns>
+</member>
+<member name="M:FEMClassLib.clsSolve.dmfn1(System.Int32,System.Double,System.Int32,System.Double,System.Double,System.Double)">
+ <summary>
+ derivative of mapping function of corner point with respect to r
+ </summary>
+ <param name="ir"></param>
+ <param name="_is"></param>
+ <param name="it"></param>
+ <param name="r"></param>
+ <param name="s"></param>
+ <param name="t"></param>
+ <returns></returns>
+</member>
+<member name="M:FEMClassLib.clsSolve.dmfm2(System.Int32,System.Double,System.Int32,System.Double,System.Double)">
+ <summary>
+ derivative of mapping function of middle point with respect to s
+ </summary>
+ <param name="ir"></param>
+ <param name="_is"></param>
+ <param name="it"></param>
+ <param name="r"></param>
+ <param name="t"></param>
+ <returns></returns>
+</member>
+<member name="M:FEMClassLib.clsSolve.dmfn2(System.Int32,System.Double,System.Int32,System.Double,System.Double)">
+ <summary>
+ derivative of mapping function of corner point with respect to s
+ </summary>
+ <param name="ir"></param>
+ <param name="_is"></param>
+ <param name="it"></param>
+ <param name="r"></param>
+ <param name="t"></param>
+ <returns></returns>
+</member>
+<member name="M:FEMClassLib.clsSolve.dsf(System.Int32,System.Double,System.Int32,System.Double,System.Double)">
+ <summary>
+ derivative of shape function with respect to r
+ </summary>
+ <param name="ir"></param>
+ <param name="_is"></param>
+ <param name="it"></param>
+ <param name="s"></param>
+ <param name="t"></param>
+ <returns></returns>
+</member>
+<member name="M:FEMClassLib.clsSolve.bdbic1(System.Double[0:,0:,0:]@,System.Double[0:,0:,0:]@,System.Double[0:,0:,0:]@,System.Double[0:,0:,0:]@,System.Int32@)">
+ <summary>
+ compute upper profile coefficients for the compatible-incompatible quadrant of the hexahedral stiffness matrix
+ </summary>
+ <param name="ps"></param>
+ <param name="pi"></param>
+ <param name="d"></param>
+ <param name="ekic"></param>
+ <param name="nmel"></param>
+</member>
+<member name="M:FEMClassLib.clsSolve.bdbic2(System.Double[0:,0:,0:]@,System.Double[0:,0:,0:]@,System.Double[0:,0:,0:]@,System.Int32@)">
+ <summary>
+ compute upper profile coefficients for the fully incompatible quadrant of the hexahedral stiffness matrix
+ </summary>
+ <param name="pi"></param>
+ <param name="d"></param>
+ <param name="ekic"></param>
+ <param name="nmel"></param>
+</member>
+<member name="M:FEMClassLib.clsSolve.bdg53(System.Double[0:,0:]@,System.Double[]@,System.Int32[]@)">
+ <summary>
+ to assemble 5 node, 15 dof element into block diagonal
+ </summary>
+ <param name="diag"></param>
+ <param name="s"></param>
+ <param name="ien"></param>
+</member>
+<member name="M:FEMClassLib.clsSolve.bdg83(System.Int32@,System.Int32@,System.Double[0:,0:]@,System.Double[0:,0:]@,System.Int32[0:,0:]@,System.Int32[0:,0:]@,System.Boolean@)">
+ <summary>
+ to assemble 8 node, 24 dof element into block diagonal
+ </summary>
+ <param name="lft"></param>
+ <param name="llt"></param>
+ <param name="diag"></param>
+ <param name="s"></param>
+ <param name="lm"></param>
+ <param name="ien"></param>
+ <param name="ldgen2"></param>
+</member>
+<member name="M:FEMClassLib.clsSolve.bdscal(System.Int32[0:,0:]@,System.Double[0:,0:]@,System.Double[]@,System.Int32@,System.Boolean@)">
+ <summary>
+ to scale rhs or lhs vector with block-diagonal array 
+ </summary>
+ <param name="idp"></param>
+ <param name="diag"></param>
+ <param name="r"></param>
+ <param name="numnp"></param>
+ <param name="ltrans"></param>
+</member>
+<member name="M:FEMClassLib.clsSolve.bfgs(System.Double[]@,System.Double[]@,System.Double[]@,System.Double@,System.Double@,System.Double@,System.Double@)">
+ <summary>
+ to compute bfgs secant update vectors
+ </summary>
+ <param name="d"></param>
+ <param name="w"></param>
+ <param name="v"></param>
+ <param name="_step"></param>
+ <param name="g"></param>
+ <param name="g0"></param>
+ <param name="dnorm"></param>
+</member>
+<member name="M:FEMClassLib.clsSolve.bsinxbs0">
+ <summary>
+ 
+ </summary>
+</member>
+<member name="M:FEMClassLib.clsSolve.bsolvr(System.Double[]@,System.Int32@,System.Int32@)">
+ <summary>
+ drive linear equation solvers
+ </summary>
+ <param name="c"></param>
+ <param name="iopt"></param>
+ <param name="_is"></param>
+</member>
+<member name="M:FEMClassLib.clsSolve.btdb(System.Double[0:,0:]@,System.Double[0:,0:,0:]@,System.Int32)">
+ <summary>
+ drive b *d*b product for hexahedral element this routine computes the d*b product
+ </summary>
+ <param name="s"></param>
+ <param name="d"></param>
+</member>
+<member name="M:FEMClassLib.clsSolve.chsky06(System.Int32@,System.Int32@,System.Double[0:,0:]@)">
+ <summary>
+ to perform cholesky factorization of 6 dof element matrix 
+ </summary>
+ <param name="lft"></param>
+ <param name="llt"></param>
+ <param name="s"></param>
+</member>
+<member name="M:FEMClassLib.clsSolve.cndres(System.Double[0:,0:]@,System.Double[0:,0:]@,System.Double[0:,0:,0:]@,System.Int32@,System.Int32@)">
+ <summary>
+ to condense residual to compatible degrees of freedom
+ </summary>
+ <param name="r"></param>
+ <param name="rxic"></param>
+ <param name="sic"></param>
+ <param name="lft"></param>
+ <param name="llt"></param>
+</member>
+<member name="M:FEMClassLib.clsSolve.cskydg(System.Int32[0:,0:]@,System.Double[0:,0:]@,System.Int32@)">
+ <summary>
+ module to condense inactive dof and compute cholesky factor 
+ of the 6 dof/node block-diagonal transformation array
+ </summary>
+ <param name="idp"></param>
+ <param name="diag"></param>
+ <param name="numnp"></param>
+</member>
+<member name="M:FEMClassLib.clsSolve.dispbc(System.Int32@,System.Double[]@,System.Double[0:,0:]@,System.Double[0:,0:]@,System.Double[0:,0:]@,System.Int32[0:,0:]@,System.Int32[]@,System.Int32[]@,System.Double[]@,System.Int32[]@,System.Double[]@,System.Int32@)">
+ <summary>
+ to impose displacement bc's on hexahedral element
+ </summary>
+ <param name="icnt2"></param>
+ <param name="fval"></param>
+ <param name="r"></param>
+ <param name="rm"></param>
+ <param name="s"></param>
+ <param name="lm"></param>
+ <param name="idir"></param>
+ <param name="lc"></param>
+ <param name="xmag"></param>
+ <param name="idflag"></param>
+ <param name="rf"></param>
+ <param name="iprec"></param>
+</member>
+<member name="M:FEMClassLib.clsSolve.dispde(System.Int32,System.Double[],System.Double[],System.Double[],System.Double[],System.Int32[],System.Int32[],System.Int32[],System.Double[],System.Double[])">
+ <summary>
+ to impose displacement bc's on discrete elements
+ </summary>
+ <param name="icnt2"></param>
+ <param name="fval"></param>
+ <param name="r"></param>
+ <param name="rm"></param>
+ <param name="s"></param>
+ <param name="lm"></param>
+ <param name="idir"></param>
+ <param name="lc"></param>
+ <param name="xmag"></param>
+ <param name="rf"></param>
+</member>
+<member name="M:FEMClassLib.clsSolve.dotprd(System.Double[]@,System.Double[]@)">
+ <summary>
+ to compute dot product, ignoring dof's with essential bc's
+ </summary>
+ <param name="v1"></param>
+ <param name="v2"></param>
+</member>
+<member name="M:FEMClassLib.clsSolve.dscrte(System.Int32[0:,0:]@,System.Double[]@,System.Double[]@,System.Double[]@,System.Double[0:,0:]@)">
+ <summary>
+ to drive discrete element routine
+ </summary>
+ <param name="id"></param>
+ <param name="u"></param>
+ <param name="ui"></param>
+ <param name="r"></param>
+ <param name="x"></param>
+</member>
+<member name="M:FEMClassLib.clsSolve.elstf">
+ <summary>
+  drive element overlays at beginning of time step residual always computed, stiffness may be computed
+ </summary>
+</member>
+<member name="M:FEMClassLib.clsSolve.fcalc(System.Double@,System.Double@,System.Double@,System.Double@,System.Double[]@,System.Double[]@,System.Int32[]@,System.Int32@,System.Double@,System.Double@,System.Double@,System.Double@,System.Double@,System.Double@,System.Double@,System.Double@,System.Int32[0:,0:]@,System.Double@,System.Double@,System.Double[0:,0:]@,System.Double@,System.Double@,System.Double@,System.Double@,System.Double@)">
+ <summary>
+ to compute tangential friction force on slidesurface facet
+ </summary>
+ <param name="fni"></param>
+ <param name="fxi"></param>
+ <param name="fyi"></param>
+ <param name="fzi"></param>
+ <param name="fric"></param>
+ <param name="fdat"></param>
+ <param name="iseg"></param>
+ <param name="l"></param>
+ <param name="ss"></param>
+ <param name="tt"></param>
+ <param name="e1"></param>
+ <param name="e2"></param>
+ <param name="e3"></param>
+ <param name="amx"></param>
+ <param name="amy"></param>
+ <param name="amz"></param>
+ <param name="irect"></param>
+ <param name="dt2"></param>
+ <param name="stft"></param>
+ <param name="x"></param>
+ <param name="dx"></param>
+ <param name="dy"></param>
+ <param name="dz"></param>
+ <param name="fmax"></param>
+ <param name="fmag"></param>
+</member>
+<member name="M:FEMClassLib.clsSolve.fstif0(System.Double[0:,0:]@)">
+ <summary>
+ compute b *d*b product for first 150 coefficients in column profile of hexahedral element stiffness
+ </summary>
+ <param name="s"></param>
+</member>
+<member name="M:FEMClassLib.clsSolve.fstif1(System.Double[0:,0:]@)">
+ <summary>
+ compute b *d*b product for second 150 coefficients in column profile of hexahedral element stiffness
+ </summary>
+ <param name="s"></param>
+</member>
+<member name="M:FEMClassLib.clsSolve.fstif2(System.Double[0:,0:]@)">
+ <summary>
+ to conclude b *d*b product for hexahedral element 
+ is this routine accounting for mean-pressure b-bar formulation?
+ </summary>
+ <param name="s"></param>
+</member>
+<member name="M:FEMClassLib.clsSolve.full33(System.Int32@,System.Int32@,System.Double[0:,0:]@,System.Double[0:,0:]@,System.Double[0:,0:]@)">
+ <summary>
+ to block-diagonal transform full 3 x 3 element submatrix
+ </summary>
+ <param name="lft"></param>
+ <param name="llt"></param>
+ <param name="s"></param>
+ <param name="dgj"></param>
+ <param name="dgi"></param>
+</member>
+<member name="M:FEMClassLib.clsSolve.fupdt(System.Int32[0:,0:]@,System.Double[0:,0:]@,System.Int32[0:,0:]@,System.Int32[]@,System.Double[0:,0:]@,System.Double[0:,0:]@,System.Int32[0:,0:]@)">
+ <summary>
+ update friction history variables for all slave nodes
+ </summary>
+ <param name="iseg"></param>
+ <param name="fdat"></param>
+ <param name="nsf"></param>
+ <param name="iaugsf"></param>
+ <param name="xlssf"></param>
+ <param name="xlmsf"></param>
+ <param name="itypsf"></param>
+</member>
+<member name="M:FEMClassLib.clsSolve.getvrt(System.Double[]@,System.Double[]@,System.Double[]@,System.Double[]@,System.Double[]@,System.Double[]@,System.Double[]@,System.Double[]@,System.Double[]@)">
+ <summary>
+ compute rotation matrix from polar decomposition of deformation gradient
+ </summary>
+ <param name="q11"></param>
+ <param name="q12"></param>
+ <param name="q13"></param>
+ <param name="q21"></param>
+ <param name="q22"></param>
+ <param name="q23"></param>
+ <param name="q31"></param>
+ <param name="q32"></param>
+ <param name="q33"></param>
+</member>
+<member name="M:FEMClassLib.clsSolve.intrfc">
+ <summary>
+ to enter slidesurface overlay
+ </summary>
+</member>
+<member name="M:FEMClassLib.clsSolve.invert(System.Double[0:,0:]@,System.Double[0:,0:]@,System.Int32[0:,0:]@,System.Double[0:,0:]@,System.Int32[0:,0:]@)">
+ <summary>
+ to drive transformation and factorization of el matrices
+ </summary>
+ <param name="diag"></param>
+ <param name="hxdata"></param>
+ <param name="sfdata"></param>
+</member>
+<member name="M:FEMClassLib.clsSolve.ldbdy(System.Double[]@)">
+ <summary>
+ to add body force loads to hexahedral element residual
+ </summary>
+ <param name="fval"></param>
+</member>
+<member name="M:FEMClassLib.clsSolve.loadcn(System.Int32[0:,0:]@,System.Double[]@,System.Double[]@,System.Int32[]@,System.Int32[]@,System.Int32[]@,System.Double[]@,System.Double[0:,0:]@,System.Double[]@,System.Int32@,System.Int32@)">
+ <summary>
+ add concentrated loads to residual
+ </summary>
+ <param name="idp"></param>
+ <param name="fval"></param>
+ <param name="r"></param>
+ <param name="nod"></param>
+ <param name="idirn"></param>
+ <param name="ncur"></param>
+ <param name="fac"></param>
+ <param name="x"></param>
+ <param name="u"></param>
+ <param name="numnp"></param>
+ <param name="nmmat"></param>
+</member>
+<member name="M:FEMClassLib.clsSolve.loadpr(System.Int32[0:,0:]@,System.Double[]@,System.Double[]@,System.Int32[]@,System.Double[]@,System.Double[0:,0:]@,System.Double[0:,0:]@,System.Double[0:,0:]@,System.Double[0:,0:]@,System.Int32[0:,0:]@,System.Double[]@,System.Int32[]@,System.Double@,System.Double[0:,0:]@,System.Int32@)">
+ <summary>
+ add pressure card constributions to residual
+ </summary>
+ <param name="idp"></param>
+ <param name="u"></param>
+ <param name="r"></param>
+ <param name="npc"></param>
+ <param name="p"></param>
+ <param name="xn"></param>
+ <param name="yn"></param>
+ <param name="zn"></param>
+ <param name="pmult"></param>
+ <param name="nodes"></param>
+ <param name="strt"></param>
+ <param name="lc"></param>
+ <param name="tt"></param>
+ <param name="x"></param>
+ <param name="nmmat"></param>
+</member>
+<member name="M:FEMClassLib.clsSolve.ludcmp(System.Double[0:,0:,0:]@,System.Int32@,System.Int32@,System.Int32@,System.Int32@,System.Int32@)">
+ <summary>
+ performs LU (crout) decomposition of NxN matrix A without pivoting
+ </summary>
+ <param name="a"></param>
+ <param name="n1"></param>
+ <param name="n2"></param>
+ <param name="n"></param>
+ <param name="lft"></param>
+ <param name="llt"></param>
+</member>
+<member name="M:FEMClassLib.clsSolve.lufwbk(System.Double[0:,0:,0:]@,System.Int32@,System.Int32@,System.Int32@,System.Double[0:,0:]@,System.Int32@,System.Int32@,System.Int32@)">
+ <summary>
+ to perform forward-backward substitution in vector blocks
+ </summary>
+ <param name="a"></param>
+ <param name="n1"></param>
+ <param name="n2"></param>
+ <param name="n"></param>
+ <param name="b"></param>
+ <param name="n3"></param>
+ <param name="lft"></param>
+ <param name="llt"></param>
+</member>
+<member name="M:FEMClassLib.clsSolve.lufwbv(System.Double[0:,0:,0:]@,System.Int32@,System.Int32@,System.Int32@,System.Double[0:,0:]@,System.Int32@,System.Int32@,System.Int32@)">
+ <summary>
+ perform forward-backward substitution in vector blocks with b ordered properly
+ </summary>
+ <param name="a"></param>
+ <param name="n1"></param>
+ <param name="n2"></param>
+ <param name="n"></param>
+ <param name="b"></param>
+ <param name="n3"></param>
+ <param name="lft"></param>
+ <param name="llt"></param>
+</member>
+<member name="M:FEMClassLib.clsSolve.matv15(System.Int32,System.Int32,System.Double[0:,0:],System.Int32[0:,0:],System.Double[],System.Double[],System.Int32)">
+ <summary>
+ for matrix-vector product for element with 15 dof
+ </summary>
+ <param name="lft"></param>
+ <param name="llt"></param>
+ <param name="s"></param>
+ <param name="lm"></param>
+ <param name="ap"></param>
+ <param name="p"></param>
+ 
+</member>
+<member name="M:FEMClassLib.clsSolve.matv24(System.Int32,System.Int32,System.Double[0:,0:],System.Int32[0:,0:],System.Double[],System.Double[],System.Int32)">
+ <summary>
+ for matrix-vector product for element with 24 dof
+ </summary>
+ <param name="lft"></param>
+ <param name="llt"></param>
+ <param name="s"></param>
+ <param name="lm"></param>
+ <param name="ap"></param>
+ <param name="p"></param>
+</member>
+<member name="M:FEMClassLib.clsSolve.moveii(System.Double[0:,0:,0:]@,System.Double[0:,0:,0:]@,System.Int32@,System.Int32@)">
+ <summary>
+ to move factored k(ii) quadrant to global storage
+ </summary>
+ <param name="sic"></param>
+ <param name="ekic"></param>
+ <param name="lft"></param>
+ <param name="llt"></param>
+</member>
+<member name="M:FEMClassLib.clsSolve.mustpt(System.Double[]@,System.Int32[]@,System.Double@,System.Boolean@,System.Boolean@)">
+ <summary>
+ evaluate must points for auto time steppers
+ </summary>
+ <param name="p"></param>
+ <param name="npc"></param>
+ <param name="time"></param>
+ <param name="lterm"></param>
+ <param name="lauto"></param>
+</member>
+<member name="M:FEMClassLib.clsSolve.nstiff(System.Double@,System.Double@,System.Double@,System.Double@,System.Double[]@)">
+ <summary>
+ to compute penalty stiffness w.r.t. master facet applicable to frictionless surface
+ </summary>
+ <param name="xk"></param>
+ <param name="n1"></param>
+ <param name="n2"></param>
+ <param name="n3"></param>
+ <param name="e"></param>
+</member>
+<member name="M:FEMClassLib.clsSolve.peval(System.Double[]@,System.Double[]@,System.Double[0:,0:]@,System.Int32[0:,0:]@,System.Double[0:,0:]@,System.Int32[0:,0:]@)">
+ <summary>
+ to drive product evaluation for conjugate gradients
+ </summary>
+ <param name="ap"></param>
+ <param name="p"></param>
+ <param name="hxdata"></param>
+ <param name="sfdata"></param>
+</member>
+<member name="M:FEMClassLib.clsSolve.ptimeSub(System.Int32@,System.Int32@,System.Int32@,System.Double@)">
+ <summary>
+ compute volume between slave node and master facet
+ used as coarse test for proximity of slave node to master facet
+ </summary>
+ <param name="k1"></param>
+ <param name="k2"></param>
+ <param name="k3"></param>
+ <param name="det"></param>
+</member>
+<member name="M:FEMClassLib.clsSolve.quasin(System.Double[]@,System.Double[]@,System.Double[]@,System.Double[]@,System.Double[]@,System.Double[]@,System.Double@,System.Int32@)">
+ <summary>
+ TO DRIVE QUASI-NEWTON ITERATION METHODS
+ </summary>
+ <param name="ui"></param>
+ <param name="usi"></param>
+ <param name="r"></param>
+ <param name="tvc2"></param>
+ <param name="u"></param>
+ <param name="tvc1"></param>
+ <param name="tt"></param>
+ <param name="ierr"></param>
+</member>
+<member name="M:FEMClassLib.clsSolve.recvri(System.Double[0:,0:]@,System.Double[0:,0:,0:],System.Double[0:,0:],System.Double[0:,0:],System.Int32,System.Int32)">
+ <summary>
+ to recover displacement increments for incompatible dof
+ </summary>
+ <param name="delus"></param>
+ <param name="sic"></param>
+ <param name="dusic"></param>
+ <param name="ric"></param>
+ <param name="lft"></param>
+ <param name="llt"></param>
+</member>
+<member name="M:FEMClassLib.clsSolve.rotat1(System.Double[0:,0:]@,System.Int32@)">
+ <summary>
+ transform stress to un-rotated configuration
+ </summary>
+ <param name="sig"></param>
+ <param name="ln"></param>
+</member>
+<member name="M:FEMClassLib.clsSolve.rotat2(System.Double[0:,0:]@,System.Int32@)">
+ <summary>
+ transform un-rotated stress to rotated configuration
+ </summary>
+ <param name="sig"></param>
+ <param name="ln"></param>
+</member>
+<member name="M:FEMClassLib.clsSolve.rotstr(System.Double[]@,System.Double[]@,System.Double[]@,System.Double[]@,System.Double[]@,System.Double[]@,System.Double[]@,System.Double[]@,System.Double[]@)">
+ <summary>
+ rotate strain tensor
+ </summary>
+ <param name="d1"></param>
+ <param name="d2"></param>
+ <param name="d3"></param>
+ <param name="d4"></param>
+ <param name="d5"></param>
+ <param name="d6"></param>
+ <param name="d7"></param>
+ <param name="d8"></param>
+ <param name="d9"></param>
+</member>
+<member name="M:FEMClassLib.clsSolve.s1main(System.Double[]@,System.Double[0:,0:]@,System.Int32@,System.Double[],System.Double[],System.Double[],System.Double[],System.Double[],System.Double[])">
+ <summary>
+ stress point integration of hypo-elasticity model
+ </summary>
+ <param name="prop"></param>
+ <param name="sig"></param>
+ <param name="ln"></param>
+</member>
+<member name="M:FEMClassLib.clsSolve.sinf(System.Double[]@,System.Double[]@,System.Double[0:,0:]@,System.Double[]@,System.Int32[0:,0:]@,System.Int32@,System.Int32@,System.Int32[0:,0:]@,System.Int32[0:,0:]@,System.Int32[0:,0:]@,System.Int32[]@,System.Int32[]@,System.Int32[]@,System.Int32[]@,System.Int32[]@,System.Int32[]@,System.Int32[]@,System.Int32[]@,System.Double[]@,System.Double[]@,System.Int32[]@,System.Int32[]@,System.Double[0:,0:]@,System.Int32[0:,0:]@,System.Double[0:,0:]@,System.Double[0:,0:]@,System.Double[0:,0:]@,System.Int32[0:,0:]@,System.Double[0:,0:]@,System.Int32[0:,0:]@,System.Double[]@,System.Double[]@,System.Double[]@,System.Double[]@,System.Int32[]@,System.Double[]@,System.Double[]@,System.Double[]@,System.Int32[]@,System.Double[]@,System.Double[]@,System.Int32[]@)">
+ <summary>
+ to drive slidesurface routines
+ </summary>
+ <param name="u"></param>
+ <param name="rhs"></param>
+ <param name="x"></param>
+ <param name="fval"></param>
+ <param name="idp"></param>
+ <param name="ndm"></param>
+ <param name="ndm2"></param>
+ <param name="iparm"></param>
+ <param name="irects"></param>
+ <param name="irectm"></param>
+ <param name="nsv"></param>
+ <param name="msr"></param>
+ <param name="nsegs"></param>
+ <param name="nsegm"></param>
+ <param name="lnsv"></param>
+ <param name="lmsr"></param>
+ <param name="ilocs"></param>
+ <param name="ilocm"></param>
+ <param name="stfs"></param>
+ <param name="stfm"></param>
+ <param name="irtls"></param>
+ <param name="irtlm"></param>
+ <param name="fric"></param>
+ <param name="iseg"></param>
+ <param name="fdat"></param>
+ <param name="abdg"></param>
+ <param name="sfdata"></param>
+ <param name="sftemp"></param>
+ <param name="xls"></param>
+ <param name="xlm"></param>
+ <param name="xgn"></param>
+ <param name="sfact"></param>
+ <param name="iaug"></param>
+ <param name="pend"></param>
+ <param name="tdeath"></param>
+ <param name="tbury"></param>
+ <param name="ifd"></param>
+ <param name="r_old"></param>
+ <param name="ss_old"></param>
+ <param name="l_old"></param>
+</member>
+<member name="M:FEMClassLib.clsSolve.slave1(System.Double[0:,0:]@,System.Int32[0:,0:]@,System.Int32[]@,System.Int32[]@,System.Int32[]@,System.Int32[]@,System.Int32[]@,System.Int32[]@,System.Int32@,System.Int32@)">
+ <summary>
+ to perform nearest-neighbor search for interfaces
+ </summary>
+ <param name="x"></param>
+ <param name="irect"></param>
+ <param name="lmsr"></param>
+ <param name="msr"></param>
+ <param name="nsv"></param>
+ <param name="iloc"></param>
+ <param name="irtl"></param>
+ <param name="nseg"></param>
+ <param name="nsn"></param>
+ <param name="nmn"></param>
+</member>
+<member name="M:FEMClassLib.clsSolve.slave2(System.Double[0:,0:]@,System.Double[]@,System.Int32[0:,0:]@,System.Int32[]@,System.Int32[]@,System.Int32[]@,System.Int32[]@,System.Int32[]@,System.Double[]@,System.Int32@,System.Int32@,System.Int32@,System.Int32[0:,0:]@,System.Int32[]@,System.Double[]@,System.Int32[]@,System.Double[]@,System.Double[0:,0:]@,System.Int32[0:,0:]@,System.Double[0:,0:]@,System.Double[0:,0:]@,System.Int32[0:,0:]@,System.Int32@,System.Int32@,System.Int32@,System.Double[0:,0:]@,System.Double@,System.Double@,System.Double@,System.Double@,System.Boolean@,System.Int32@,System.Double[]@,System.Double@,System.Int32@,System.Double[0:,0:]@,System.Double[0:,0:]@,System.Int32[]@)">
+ <summary>
+ to determine if slidesurface penalty element is active
+ </summary>
+ <param name="x"></param>
+ <param name="rhs"></param>
+ <param name="irect"></param>
+ <param name="lmsr"></param>
+ <param name="msr"></param>
+ <param name="nsv"></param>
+ <param name="iloc"></param>
+ <param name="irtl"></param>
+ <param name="stf"></param>
+ <param name="nsn"></param>
+ <param name="nmn"></param>
+ <param name="nty"></param>
+ <param name="idp"></param>
+ <param name="lmn"></param>
+ <param name="s"></param>
+ <param name="irects"></param>
+ <param name="lnsv"></param>
+ <param name="fric"></param>
+ <param name="fdat"></param>
+ <param name="iseg"></param>
+ <param name="abdg"></param>
+ <param name="sfdata"></param>
+ <param name="kfstor"></param>
+ <param name="lfstor"></param>
+ <param name="iebuf"></param>
+ <param name="xls"></param>
+ <param name="xgn"></param>
+ <param name="xgt"></param>
+ <param name="sfact"></param>
+ <param name="pend"></param>
+ <param name="laugon"></param>
+ <param name="numnp"></param>
+ <param name="fval"></param>
+ <param name="adeath"></param>
+ <param name="ifd"></param>
+ <param name="r_old"></param>
+ <param name="ss_old"></param>
+ <param name="l_old"></param>
+</member>
+<member name="M:FEMClassLib.clsSolve.solide">
+ <summary>
+ enter hexahedral continuum element overlay
+ </summary>
+</member>
+<member name="M:FEMClassLib.clsSolve.unpkid(System.Int32[0:,0:]@,System.Int32,System.Int32,System.Int32[0:,0:]@,System.Int32,System.Int32,System.Int32)">
+ <summary>
+ overloaded to handle 2D array
+ </summary>
+</member>
+<member name="M:FEMClassLib.clsSolve.packid(System.Int32[]@,System.Int32[]@,System.Int32)">
+ <summary>
+ pack Integer data 6 Or 9 terms
+ </summary>
+ <param name="idu"></param>
+ <param name="idp"></param>
+ <param name="itp"></param>
+</member>
+<member name="M:FEMClassLib.clsSolve.packid(System.Int32[0:,0:]@,System.Int32,System.Int32,System.Int32[0:,0:]@,System.Int32,System.Int32,System.Int32)">
+ <summary>
+ overloaded to handle 2D array
+ </summary>
+</member>
+<member name="M:FEMClassLib.clsSolve.solve(System.Object,System.Int32,System.Double[]@,System.Double[]@,System.Int32)">
+ <summary>
+ drive the solution process
+ </summary>
+</member>
+<member name="M:FEMClassLib.clsSolve.spring(System.Int32[]@,System.Double[0:,0:]@,System.Int32[0:,0:]@,System.Double[]@,System.Double[0:,0:]@,System.Int32@,System.Double[0:,0:]@,System.Double[]@,System.Double[]@,System.Int32[0:,0:]@,System.Double[]@,System.Int32[]@,System.Double[]@,System.Int32@,System.Int32[]@,System.Int32[]@,System.Double[]@,System.Double[]@,System.Double[0:,0:]@)">
+ <summary>
+ to compute residual and stiffness for discrete elements
+ </summary>
+ <param name="mtypde"></param>
+ <param name="cmde"></param>
+ <param name="ixde"></param>
+ <param name="sclf"></param>
+ <param name="dehv"></param>
+ <param name="nmelde"></param>
+ <param name="x"></param>
+ <param name="u"></param>
+ <param name="ui"></param>
+ <param name="idp"></param>
+ <param name="r"></param>
+ <param name="npc"></param>
+ <param name="p"></param>
+ <param name="icnt2"></param>
+ <param name="idir"></param>
+ <param name="lc"></param>
+ <param name="xmg"></param>
+ <param name="rf"></param>
+ <param name="diag"></param>
+</member>
+<member name="M:FEMClassLib.clsSolve.ssblck(System.Double[0:,0:]@,System.Int32[0:,0:]@,System.Double[0:,0:]@,System.Int32[0:,0:]@,System.Int32@)">
+ <summary>
+ to reorder list of 5 node elements (with 3 dof/node) to avoid recursion during vectorized operations
+ </summary>
+ <param name="s"></param>
+ <param name="ien"></param>
+ <param name="stemp"></param>
+ <param name="ientmp"></param>
+ <param name="numel"></param>
+</member>
+<member name="M:FEMClassLib.clsSolve.sslcs(System.Int32[]@,System.Double[],System.Double[],System.Double[],System.Double[],System.Double[],System.Double[])">
+ <summary>
+ drive entry into continuum material model
+ </summary>
+ <param name="ihv"></param>
+</member>
+<member name="M:FEMClassLib.clsSolve.statcn(System.Double[0:,0:]@,System.Double[0:,0:,0:]@,System.Int32@,System.Int32@)">
+ <summary>
+ to perform static condensation/partial factorization of incompatible degrees of freedom for hexahedral element
+ </summary>
+ <param name="s"></param>
+ <param name="ekic"></param>
+ <param name="lft"></param>
+ <param name="llt"></param>
+</member>
+<member name="M:FEMClassLib.clsSolve.stfic(System.Int32@,System.Int32)">
+ <summary>
+ drive incompatible hex residual/stiffness formation
+ </summary>
+ <param name="nmel"></param>
+</member>
+<member name="M:FEMClassLib.clsSolve.stfinf(System.Double[]@,System.Double[]@,System.Double[]@)">
+ <summary>
+ to compute penalty stiffness matrix for slidesurface elem.
+ i.e., distributes penalty stiffness to nodes defining master facet
+ </summary>
+ <param name="n1"></param>
+ <param name="n2"></param>
+ <param name="n3"></param>
+ <param name="h"></param>
+ <param name="e"></param>
+ <param name="s"></param>
+</member>
+<member name="M:FEMClassLib.clsSolve.stric1">
+ <summary>
+ compute coefficients for chain rule at center of element
+ </summary>
+</member>
+<member name="M:FEMClassLib.clsSolve.stric2(System.Double[]@,System.Int32,System.Int32)">
+ <summary>
+ compute gradient matrix for incompatible hex element
+ </summary>
+ <param name="vlinc"></param>
+</member>
+<member name="M:FEMClassLib.clsSolve.symm33(System.Int32@,System.Int32@,System.Double[0:,0:]@,System.Double[0:,0:]@)">
+ <summary>
+ to block-diagonal transform symmetric 3 x 3 el submatrix
+ </summary>
+ <param name="lft"></param>
+ <param name="llt"></param>
+ <param name="s"></param>
+ <param name="dgj"></param>
+</member>
+<member name="M:FEMClassLib.clsSolve.temth(System.Double,System.Double[],System.Double,System.Double[],System.Int32[],System.Double[],System.Int32,System.Double,System.Double[],System.Double[])">
+ <summary>
+ to set nodal temperatures based on load curve "itemp"
+ </summary>
+ <param name="told"></param>
+ <param name="temo"></param>
+ <param name="tnew"></param>
+ <param name="temp"></param>
+ <param name="npc"></param>
+ <param name="p"></param>
+ <param name="lcc"></param>
+ <param name="tt"></param>
+ <param name="tmode"></param>
+ <param name="tbase"></param>
+</member>
+<member name="M:FEMClassLib.clsSolve.tran53(System.Int32@,System.Int32@,System.Int32[0:,0:],System.Int32[0:,0:]@,System.Double[0:,0:]@,System.Double[0:,0:]@,System.Boolean@,System.Double@)">
+ <summary>
+ to perform block-diagonal transformation of 5 node 15 dof element matrix 
+ assumes ien array temporarily in first 5 words of lm array  
+ </summary>
+ <param name="lft"></param>
+ <param name="llt"></param>
+ <param name="idp"></param>
+ <param name="lm"></param>
+ <param name="s"></param>
+ <param name="diag"></param>
+ <param name="ldgen"></param>
+ <param name="dcheck"></param>
+</member>
+<member name="M:FEMClassLib.clsSolve.tran83(System.Int32@,System.Int32@,System.Int32@,System.Int32[0:,0:]@,System.Int32[0:,0:]@,System.Double[0:,0:]@,System.Double[0:,0:]@,System.Boolean@,System.Double@)">
+ <summary>
+ perform block-diagonal transformation of 8 node 24 dof element matrix 
+ assumes ien array temporarily in first 8 words of lm array   
+ </summary>
+ <param name="lft"></param>
+ <param name="llt"></param>
+ <param name="idp"></param>
+ <param name="lm"></param>
+ <param name="s"></param>
+ <param name="diag"></param>
+ <param name="ldgen"></param>
+ <param name="dcheck"></param>
+</member>
+<member name="M:FEMClassLib.clsSolve.tranfc(System.Int32)">
+ <summary>
+ to compute rank-four transformation of material moduli
+ </summary>
+ <param name="i"></param>
+</member>
+</members>
+</doc>

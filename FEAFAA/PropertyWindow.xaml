@@ -1,0 +1,26 @@
+﻿<Window x:Class="PropertyWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="Enter New Layer Property" Height="307" Width="350">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        <Label x:Name="lblEnterNewValue">Label1</Label>
+        <Label Grid.Row="1">
+            <AccessText x:Name="lblRange" TextWrapping="Wrap" Text="Label2"/>
+        </Label>
+        <ComboBox x:Name="cmbEnterNewValue" Grid.Row="2" HorizontalAlignment="Right" VerticalAlignment="Center" Width="100" Height="25" IsEditable="True" Margin="0,0,10,0"></ComboBox>
+        <Grid Grid.Row="3">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Button x:Name="cmdCancel" Width="80" Height="40">Cancel</Button>
+            <Button x:Name="cmdOK" Grid.Column="1" Width="80" Height="40">OK</Button>
+        </Grid>
+    </Grid>
+</Window>

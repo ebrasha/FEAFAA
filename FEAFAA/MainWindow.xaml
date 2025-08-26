@@ -1,0 +1,757 @@
+﻿<Window
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="clr-namespace:FEAFAA"   
+    xmlns:System="clr-namespace:System;assembly=mscorlib" x:Class="MainWindow"   
+    Title="FEAFAA 4.0 - Reprogrammed Software for Civil Engineering by Ebrahim Shafiei" Height="613" Width="808" Icon="Images/FEAFAA.ico">
+    <Grid>
+        <DockPanel LastChildFill="True">
+            <TabControl x:Name="TabStrip1">
+                <TabItem x:Name="TabPage1" Header="Vehicle Selection" Height="29">
+                    <DockPanel LastChildFill="True">
+                        <Border Padding="10">
+                            <DockPanel DockPanel.Dock="Left" Width="180">
+                                <Label DockPanel.Dock="Top" Content="Vehicle Group" HorizontalAlignment="Stretch" HorizontalContentAlignment="Center" Height="27" FontWeight="Bold" Background="#FFFFFFC3" Margin="0" BorderBrush="#FFABADB3" BorderThickness="1" />
+                                <ListBox DockPanel.Dock="Top" Height="120" x:Name="ListBoxAirplaneGroup" IsSynchronizedWithCurrentItem="True" >
+                                    <ListBox.ItemContainerStyle>
+                                        <Style TargetType="ListBoxItem">
+                                            <Style.Resources>
+                                                <!--<SolidColorBrush x:Key="{x:Static SystemColors.HighlightBrushKey}" Color="{x:Static SystemColors.HighlightColor}"/>-->
+                                                <SolidColorBrush x:Key="{x:Static SystemColors.InactiveSelectionHighlightBrushKey}" Color="{x:Static SystemColors.HighlightColor}"/>
+                                            </Style.Resources>
+                                        </Style>
+                                    </ListBox.ItemContainerStyle>
+                                </ListBox>
+
+                                <Label DockPanel.Dock="Top" Content="Library Vehicles" HorizontalAlignment="Stretch" HorizontalContentAlignment="Center" Height="27" FontWeight="Bold" Background="#FFFFFFC3" BorderBrush="#FFABADB3" BorderThickness="1" Margin="0,5,0,0" />
+                                <!--<TextBox DockPanel.Dock="Bottom" x:Name="TextCriticalAircraft" Padding="3"/>-->
+                                <ListBox x:Name="ListBoxLibraryAirplane">
+                                    <ListBox.ItemContainerStyle>
+                                        <Style TargetType="ListBoxItem">
+                                            <Style.Resources>
+                                                <!--<SolidColorBrush x:Key="{x:Static SystemColors.HighlightBrushKey}" Color="{x:Static SystemColors.HighlightColor}"/>-->
+                                                <SolidColorBrush x:Key="{x:Static SystemColors.InactiveSelectionHighlightBrushKey}" Color="{x:Static SystemColors.HighlightColor}"/>
+                                            </Style.Resources>
+                                        </Style>
+                                    </ListBox.ItemContainerStyle>
+                                </ListBox>
+
+                            </DockPanel>
+                        </Border>
+                        <DockPanel>
+                            <Grid>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="2*" />
+                                    <RowDefinition Height="*" />
+                                </Grid.RowDefinitions>
+                                <DockPanel Grid.Row="0" DockPanel.Dock="Top">
+                                    <Grid Margin="5,0,0,0">
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition Height="*" />
+                                        </Grid.RowDefinitions>
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="*" />
+                                            <ColumnDefinition Width="150" />
+                                        </Grid.ColumnDefinitions>
+                                        <Border Grid.Column="0"  >
+                                            <!--<DockPanel >-->
+                                            <Grid>
+                                                <Grid.RowDefinitions>
+                                                    <RowDefinition Height="13*"/>
+                                                    <RowDefinition Height="190*"/>
+                                                </Grid.RowDefinitions>
+                                                <Grid.ColumnDefinitions>
+                                                    <ColumnDefinition Width="92*"/>
+                                                    <ColumnDefinition Width="15*"/>
+                                                    <ColumnDefinition Width="107*"/>
+                                                    <ColumnDefinition Width="106*"/>
+                                                    <ColumnDefinition Width="107*"/>
+                                                </Grid.ColumnDefinitions>
+                                                <Border
+                                        BorderThickness="2"
+                                        BorderBrush="Black"
+                                        Background="LightGray" Grid.Row="1" Grid.ColumnSpan="5">
+                                                    <Canvas x:Name="picGear" Background="LightGoldenrodYellow"/>
+                                                </Border>
+                                                <Label x:Name="LabelXCoord" Content="" HorizontalAlignment="Stretch" HorizontalContentAlignment="Center" Grid.ColumnSpan="2" />
+                                                <Label x:Name="LabelXSelCoord" Content="" HorizontalAlignment="Stretch" HorizontalContentAlignment="Center" Grid.Column="2" />
+                                                <Label x:Name="LabelYCoord" Content="" HorizontalAlignment="Stretch" HorizontalContentAlignment="Center" Grid.Column="3" />
+                                                <Label x:Name="LabelYSelCoord" Content="" HorizontalAlignment="Stretch" HorizontalContentAlignment="Center" Grid.Column="4" />
+                                            </Grid>
+                                            <!--</DockPanel>-->
+                                        </Border>
+                                        <Border Grid.Column="1" Padding="7 7 7 0">
+                                            <DockPanel  Width="120" Height="270">
+                                                <GroupBox Header="Edit Wheels"  x:Name="GroupBoxEditWheels" DockPanel.Dock="Top">
+                                                    <Grid>
+                                                        <Grid.RowDefinitions>
+                                                            <RowDefinition Height="*" />
+                                                            <RowDefinition Height="*" />
+                                                            <RowDefinition Height="*" />
+                                                            <RowDefinition Height="*" />
+                                                        </Grid.RowDefinitions>
+                                                        <Grid.ColumnDefinitions>
+                                                            <ColumnDefinition Width="5*" />
+                                                            <ColumnDefinition Width="22*"/>
+                                                        </Grid.ColumnDefinitions>
+                                                        <ToggleButton x:Name="BtnAddWheel" Grid.Row="0" Grid.Column="0" Content="_Add" Margin="5" Grid.ColumnSpan="2"/>
+                                                        <ToggleButton x:Name="BtnRemoveWheel" Grid.Row="1" Grid.Column="0" Content="_Remove" Margin="5" Grid.ColumnSpan="2"/>
+                                                        <ToggleButton x:Name="BtnSelectWheel" Grid.Row="3" Grid.Column="0" Content="Se_lect" Margin="5" Grid.ColumnSpan="2" />
+                                                        <ToggleButton x:Name="BtnMoveWheel" Grid.Row="2" Grid.Column="0" Content="_Move" Margin="5" Grid.ColumnSpan="2"/>
+
+                                                    </Grid>
+                                                </GroupBox>
+                                                <GroupBox Header="Library Functions" x:Name="GroupBoxLibraryFunctions">
+                                                    <Grid>
+                                                        <Grid.RowDefinitions>
+                                                            <RowDefinition Height="33" />
+                                                            <RowDefinition Height="33" />
+                                                            <RowDefinition Height="33" />
+                                                        </Grid.RowDefinitions>
+                                                        <Grid.ColumnDefinitions>
+                                                            <ColumnDefinition Width="11*" />
+                                                            <ColumnDefinition Width="97*"/>
+                                                        </Grid.ColumnDefinitions>
+                                                        <ToggleButton x:Name="BtnSaveACinLibrary" Grid.Row="0" Grid.Column="0" Content="Save" Margin="5" Grid.ColumnSpan="2"/>
+                                                        <ToggleButton x:Name="BtnAddACtoLibrary" Grid.Row="1" Grid.Column="0" Content="Add" Margin="5" Grid.ColumnSpan="2"/>
+                                                        <ToggleButton x:Name="BtnRemoveACfromLibrary" Grid.Row="2" Grid.Column="0" Content="Remove" Margin="5" Grid.ColumnSpan="2"/>
+                                                    </Grid>
+                                                </GroupBox>
+
+                                            </DockPanel>
+                                        </Border>
+                                    </Grid>
+
+
+                                </DockPanel>
+                                <DockPanel Grid.Row="1" DockPanel.Dock="Bottom">
+                                    <Border>
+                                        <DockPanel Height="135" >
+                                            <Grid>
+                                                <Grid.RowDefinitions>
+                                                    <RowDefinition Height="*" />
+                                                </Grid.RowDefinitions>
+                                                <Grid.ColumnDefinitions>
+                                                    <ColumnDefinition Width="2*" />
+                                                    <ColumnDefinition Width="1.2*" />
+                                                    <ColumnDefinition Width="150" />
+                                                </Grid.ColumnDefinitions>
+
+                                                <local:DataTable Grid.Column="0" x:Name="GridParams"  Margin="5,0"/>
+                                                <GroupBox Grid.Column="1" Header="Tire Footprint Selection" x:Name="fraFootprint">
+                                                    <Grid>
+                                                        <Grid.RowDefinitions>
+                                                            <RowDefinition Height="*" />
+                                                            <RowDefinition Height="*" />
+                                                        </Grid.RowDefinitions>
+                                                        <RadioButton Content="PCA Rectangle (default)"  Grid.Row="0" Grid.Column="0" Height="16" HorizontalAlignment="Left" x:Name="OptPCARectangle" IsChecked="True"/>
+                                                        <RadioButton Content="Square Footprint"  Grid.Row="1" Grid.Column="0" Height="16" HorizontalAlignment="Left" x:Name="OptSquare"/>
+                                                    </Grid>
+                                                </GroupBox>
+                                                <Grid Grid.Column="2">
+                                                    <Grid.RowDefinitions>
+                                                        <RowDefinition Height="*" />
+                                                        <RowDefinition Height="50" />
+                                                    </Grid.RowDefinitions>
+                                                    <Grid.ColumnDefinitions>
+                                                        <ColumnDefinition Width="*" />
+                                                        <ColumnDefinition Width="*" />
+                                                    </Grid.ColumnDefinitions>
+                                                    <Button Grid.Row="1" Grid.Column="0" Content="_Help" Margin="5" x:Name="btnHelpT1" />
+                                                    <Button Grid.Row="1" Grid.Column="1" Content="E_xit" Margin="5" x:Name="btnExitT1" />
+                                                    <Button Grid.Row="0" Grid.ColumnSpan="2" Content="About" Margin="20" x:Name="btnAboutFEAFAA" />
+                                                </Grid>
+                                            </Grid>
+                                        </DockPanel>
+                                    </Border>
+                                </DockPanel>
+                            </Grid>
+                        </DockPanel>
+                    </DockPanel>
+                </TabItem>
+                <TabItem x:Name="TabPage2" Header="Pavement Structure" >
+                    <Grid>
+                        <DockPanel LastChildFill="True">
+                            <DockPanel LastChildFill="True" DockPanel.Dock="Top" Height="250" Margin="20,10">
+                                <DockPanel Width="250" DockPanel.Dock="Right">
+                                    <Label DockPanel.Dock="Bottom" HorizontalAlignment="Center" FontWeight="Bold" FontSize="14" Content="Gear Position"/>
+                                    <Border BorderThickness="2"
+                                        BorderBrush="Black"
+                                        Background="LightGray">
+                                        <Canvas x:Name="picSlab"  Background="LightGoldenrodYellow" Width="246" Height="217" >
+                                            <Label x:Name="lblY" Content="Y" Canvas.Left="10" Canvas.Top="10" RenderTransformOrigin="-0.237,-0.231"/>
+                                            <Label x:Name="lblX" Content="X" Canvas.Left="219" Canvas.Top="181" RenderTransformOrigin="-0.765,0.423"/>
+                                        </Canvas>
+                                    </Border>
+                                </DockPanel>
+                                <DockPanel Margin="0,0,20,0">
+                                    <CheckBox x:Name="ChkOverlay"   DockPanel.Dock="Top" FontWeight="Bold" Content="PCC Overlay"/>
+                                    <Grid DockPanel.Dock="Bottom">
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="*"/>
+                                            <ColumnDefinition Width="*"/>
+                                        </Grid.ColumnDefinitions>
+                                        <Button x:Name="btnAddALayer" Content="Add Layer"/>
+                                        <Button x:Name="btnDeleteALayer" Grid.Column="1" Content="Delete Layer"/>
+                                    </Grid>
+                                    <DataGrid x:Name="grdLayerProps" ItemsSource="{Binding grdLayerTable}" AutoGenerateColumns="False" SelectionMode="Single" SelectionUnit="Cell" IsSynchronizedWithCurrentItem="True" CanUserResizeRows="False" CanUserDeleteRows="False" CanUserAddRows="False">
+                                        <DataGrid.Columns>
+                                            <DataGridTextColumn Width="130"   Header="Layers" Binding="{Binding Layers}" CanUserSort="False" CanUserResize="False" IsReadOnly="True">
+                                                <DataGridTextColumn.HeaderStyle>
+                                                    <Style TargetType="DataGridColumnHeader">
+                                                        <Setter Property="HorizontalContentAlignment" Value="Center"/>
+                                                    </Style>
+                                                </DataGridTextColumn.HeaderStyle>
+                                            </DataGridTextColumn>
+                                            <DataGridTextColumn Width="110"  TextBlock.TextAlignment="Right" Header="E Modulus" Binding="{Binding EModulus}" CanUserSort="False" CanUserResize="False" IsReadOnly="True">
+                                                <DataGridTextColumn.HeaderStyle>
+                                                    <Style TargetType="DataGridColumnHeader">
+                                                        <Setter Property="HorizontalContentAlignment" Value="Center"/>
+                                                    </Style>
+                                                </DataGridTextColumn.HeaderStyle>
+                                                <DataGridTextColumn.ElementStyle>
+                                                    <Style TargetType="{x:Type TextBlock}">
+                                                        <Setter Property="HorizontalAlignment" Value="Right" />
+                                                    </Style>
+                                                </DataGridTextColumn.ElementStyle>
+                                            </DataGridTextColumn>
+                                            <DataGridTextColumn Width="110" TextBlock.TextAlignment="Right" Header="Poisson Ratio" Binding="{Binding PoissonRatio}" CanUserSort="False" CanUserResize="False" IsReadOnly="True">
+                                                <DataGridTextColumn.HeaderStyle>
+                                                    <Style TargetType="DataGridColumnHeader">
+                                                        <Setter Property="HorizontalContentAlignment" Value="Center"/>
+                                                    </Style>
+                                                </DataGridTextColumn.HeaderStyle>
+                                                <DataGridTextColumn.ElementStyle>
+                                                    <Style TargetType="{x:Type TextBlock}">
+                                                        <Setter Property="HorizontalAlignment" Value="Right" />
+                                                    </Style>
+                                                </DataGridTextColumn.ElementStyle>
+                                            </DataGridTextColumn>
+                                            <DataGridTextColumn Width="110" TextBlock.TextAlignment="Right" Header="Thickness" Binding="{Binding Thickness}" CanUserSort="False" CanUserResize="False" IsReadOnly="True">
+                                                <DataGridTextColumn.HeaderStyle>
+                                                    <Style TargetType="DataGridColumnHeader">
+                                                        <Setter Property="HorizontalContentAlignment" Value="Center"/>
+                                                    </Style>
+                                                </DataGridTextColumn.HeaderStyle>
+                                                <DataGridTextColumn.ElementStyle>
+                                                    <Style TargetType="{x:Type TextBlock}">
+                                                        <Setter Property="HorizontalAlignment" Value="Right" />
+                                                    </Style>
+                                                </DataGridTextColumn.ElementStyle>
+                                            </DataGridTextColumn>
+                                        </DataGrid.Columns>
+
+                                    </DataGrid>
+                                </DockPanel>
+                            </DockPanel>
+                            <DockPanel DockPanel.Dock="Bottom">
+                                <Grid Margin="0,0,0,10">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="*"/>
+                                        <ColumnDefinition Width="*"/>
+                                        <ColumnDefinition Width="75"/>
+                                        <ColumnDefinition Width="75"/>
+                                    </Grid.ColumnDefinitions>
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition/>
+                                    </Grid.RowDefinitions>
+                                    <Border Grid.Column="2" Padding="5,5,5,0">
+                                        <Button Height="40" Content="Help"  x:Name="btnHelpT2" />
+                                    </Border>
+                                    <Border Grid.Column="3" Padding="5,5,5,0">
+                                        <Button x:Name="btnExitT2" Content="Exit" HorizontalAlignment="Right" Width="65"/>
+                                    </Border>
+                                </Grid>
+                            </DockPanel>
+                            <DockPanel DockPanel.Dock="Bottom" Visibility="Hidden" Height="0">
+                                <DockPanel>
+                                    <GroupBox x:Name="fraFoundationOptions" Header="Foundation Options" Visibility="Hidden">
+                                        <Grid>
+                                            <RadioButton x:Name="optSubgrade" Content="Infinite Element"></RadioButton>
+                                            <RadioButton x:Name="optWinkler" Content="Winkler Foundation"></RadioButton>
+                                        </Grid>
+                                    </GroupBox>
+                                </DockPanel>
+                                <DockPanel>
+                                    <GroupBox x:Name="fraMesh" Header="Mesh Options" Visibility="Hidden">
+                                        <Grid>
+                                            <RadioButton x:Name="OptHex" Content="Hex Elements with Incompatible Modes Formulation (Default)"></RadioButton>
+                                            <RadioButton x:Name="OptShell" Content="Shell Element Formulation"></RadioButton>
+                                        </Grid>
+                                    </GroupBox>
+                                </DockPanel>
+                                <DockPanel>
+                                    <GroupBox x:Name="fraCrackedBase" Header="Interface" Visibility="Hidden">
+                                        <Grid>
+                                            <Slider x:Name="sldIFParam" SmallChange="1"></Slider>
+                                            <CheckBox x:Name="chkCrackedBase" Visibility="Hidden" IsEnabled="False" Content="Base Layer Cracked"/>
+                                        </Grid>
+                                    </GroupBox>
+                                </DockPanel>
+                                <CheckBox x:Name="ChkAllowSymmetry" Visibility="Hidden" ToolTip="If this box is unchecked, the full 9-slab mesh is generated. If checked, symmetry may be used if the gear footprint and position admit symmetry." Content="Allow Symmetry if Checked"/>
+                                <CheckBox x:Name="chkSlabWt" Content="Include Slab Self-Weight" Visibility="Hidden" IsEnabled="False"></CheckBox>
+                                <Button x:Name="btnEleChk" Content="Element Check" Visibility="Hidden"></Button>
+                                <Button x:Name="btnPositionChk" Content="Position Check" Visibility="Hidden"></Button>
+                            </DockPanel>
+                            <DockPanel>
+                                <Grid>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition/>
+                                        <ColumnDefinition/>
+                                        <ColumnDefinition/>
+                                    </Grid.ColumnDefinitions>
+                                    <GroupBox x:Name="fraDims" Grid.Column="0" >
+                                        <GroupBox.Header >
+                                            <Label FontWeight="Bold" FontSize="14" Foreground="Blue" Content="Slab Mesh"/>
+                                        </GroupBox.Header>
+                                        <Grid>
+                                            <Grid.RowDefinitions>
+                                                <RowDefinition Height="*"/>
+                                                <RowDefinition Height="*"/>
+                                                <RowDefinition Height="*"/>
+                                                <RowDefinition Height="*"/>
+                                                <RowDefinition Height="2.1*"/>
+                                            </Grid.RowDefinitions>
+                                            <Grid.ColumnDefinitions>
+                                                <ColumnDefinition  Width="1.5*"/>
+                                                <ColumnDefinition  Width="*"/>
+                                            </Grid.ColumnDefinitions>
+                                            <Label x:Name="lblXDim" Content="X Dimension (ft):"/>
+                                            <Label x:Name="lblYDim"  Grid.Column="0" Grid.Row="1" Content="Y Dimension (ft):"/>
+                                            <Label x:Name="lblMesh"  Grid.Column="0" Grid.Row="2" ToolTip="A higher number means a finer PCC slab mesh." Content="Number of Elements:"/>
+                                            <Label x:Name="lblNSlabs"  Grid.Column="0" Grid.Row="3" Content="Number of Slabs:"/>
+                                            <Border Padding="3"  Grid.Column="1" Grid.Row="0" >
+                                                <ComboBox x:Name="cmbDimX" Text="25" TextBoxBase.TextChanged="cmbDimX_TextChanged" Margin="0,0,0.5,3"/>
+                                            </Border>
+                                            <Border Padding="3"  Grid.Column="1" Grid.Row="1" >
+                                                <ComboBox x:Name="cmbDimY" Text="25" TextBoxBase.TextChanged="cmbDimX_TextChanged" Margin="0,0,0.5,2.5"/>
+                                            </Border>
+                                            <Border Padding="3"  Grid.Column="1" Grid.Row="2" >
+                                                <ComboBox x:Name="cmbMesh" Text="30" Margin="0,0,0.5,3"/>
+                                            </Border>
+                                            <Border Padding="3"  Grid.Column="1" Grid.Row="3" >
+                                                <ComboBox x:Name="cmbNSlabs" Height="22" VerticalAlignment="Bottom" Text="1" Margin="0,0,0.5,2.5">
+                                                </ComboBox>
+                                            </Border>
+                                            <GroupBox x:Name="fraFdDims" Grid.Row="4" Grid.ColumnSpan="2">
+                                                <GroupBox.Header >
+                                                    <Label FontWeight="Bold" FontSize="14" Foreground="Blue" Content="Foundation Mesh"/>
+                                                </GroupBox.Header>
+                                                <Grid>
+                                                    <Grid.ColumnDefinitions>
+                                                        <ColumnDefinition Width="1.5*"/>
+                                                        <ColumnDefinition/>
+                                                    </Grid.ColumnDefinitions>
+                                                    <Label x:Name="lblFdMesh" Content="Number of Elements:"/>
+                                                    <Border Padding="3"  Grid.Column="1">
+                                                        <ComboBox x:Name="cmbFdMesh" Text="30" Height="22" VerticalAlignment="Top"/>
+                                                    </Border>
+                                                </Grid>
+                                            </GroupBox>
+                                        </Grid>
+                                    </GroupBox>
+                                    <GroupBox x:Name="fraTemp"  Grid.Column="2">
+                                        <GroupBox.Header>
+                                            <CheckBox x:Name="chkTempLoad" FontWeight="Bold" FontSize="14" Foreground="Blue" Content="Slab Temperature" />
+                                        </GroupBox.Header>
+                                        <Grid>
+                                            <Grid.RowDefinitions>
+                                                <RowDefinition Height=".5*"/>
+                                                <RowDefinition Height=".5*"/>
+                                                <RowDefinition Height=".5*"/>
+                                                <RowDefinition Height="*"/>
+                                            </Grid.RowDefinitions>
+                                            <Grid.ColumnDefinitions>
+                                                <ColumnDefinition  Width="1.5*"/>
+                                                <ColumnDefinition  Width="*"/>
+                                            </Grid.ColumnDefinitions>
+                                            <Label x:Name="lblLETG" Content="ELTG (F/in)" IsEnabled="False"/>
+                                            <Label x:Name="lblThermCoef"  Grid.Column="0" Grid.Row="1" Content="Thermal Coefficient (1/F)" IsEnabled="False" />
+                                            <Label x:Name="lblCurlShape"  Grid.Column="0" Grid.Row="2" Content="Slab Curling Shape" IsEnabled="False"/>
+                                            <Border Padding="3"  Grid.Column="1" Grid.Row="0" >
+                                                <TextBox x:Name="txtLETG" Text="0" Height="22" VerticalAlignment="Top" IsEnabled="False"/>
+                                            </Border>
+                                            <Border Padding="3"  Grid.Column="1" Grid.Row="1" >
+                                                <TextBox x:Name="txtThermCoef" Text="5e-6" Height="22" VerticalAlignment="Top" IsEnabled="False"/>
+                                            </Border>
+                                            <Border Padding="3"  Grid.Column="1" Grid.Row="2" >
+                                                <ComboBox x:Name="cmbCurlShape"  Height="22" VerticalAlignment="Top" IsEnabled="False"/>
+                                            </Border>
+                                        </Grid>
+                                    </GroupBox>
+                                    <GroupBox x:Name="fraLoad" Grid.Column="1" Margin="0,-5,0,-55" Height="277" VerticalAlignment="Top">
+                                        <GroupBox.Header >
+                                            <ComboBox x:Name="cmbLoadingType"  Height="22" VerticalAlignment="Top" Width="146" FontSize="14" Foreground="Blue" FontWeight="Bold" />
+                                        </GroupBox.Header>
+                                        <Grid Height="242" VerticalAlignment="Top">
+                                            <Grid.RowDefinitions>
+                                                <RowDefinition Height="*"/>
+                                                <RowDefinition Height="*"/>
+                                                <RowDefinition Height="*"/>
+                                                <RowDefinition Height="*"/>
+                                                <RowDefinition Height="*"/>
+                                                <RowDefinition Height="*"/>
+                                                <RowDefinition Height="*"/>
+                                                <RowDefinition Height="*"/>
+                                                <RowDefinition Height="*"/>
+                                                <RowDefinition Height="*"/>
+                                                <RowDefinition Height="*"/>
+                                            </Grid.RowDefinitions>
+                                            <Grid.ColumnDefinitions>
+                                                <ColumnDefinition  Width=".7*"/>
+                                                <ColumnDefinition  Width=".3*"/>
+                                            </Grid.ColumnDefinitions>
+                                            <Label x:Name="lblLdCase" Grid.ColumnSpan="2" Content="Load Case:" Height="26" FontWeight="Bold"/>
+                                            <RadioButton x:Name="optEdge"  Grid.ColumnSpan="2"  IsChecked="True"  Content="Edge Load" Height="18" Width="75" Margin="80,4,98,0" />
+                                            <RadioButton x:Name="optInterior" Content="Interior Load" Width="85" Height="18" Margin="160,4,0,0" Grid.ColumnSpan="2"/>
+                                            <Label x:Name="lblAngle"  Grid.Row="1" HorizontalAlignment="Left" Content="Angle (degrees):" Height="26"  FontWeight="Bold" VerticalAlignment="Top"/>
+                                            <ComboBox  Grid.Row="1" Grid.Column="1" x:Name="cmbAngle" DockPanel.Dock="Right"  Height="26" VerticalAlignment="Top" TextBoxBase.TextChanged="cmbAngle_TextChanged" IsEditable="True" />
+                                            <Label x:Name="lblPositionGear" Grid.Row="2"  ToolTip="For the (0,0) offset, the gear is positioned so that the tire edge coincides with the edge of the slab." Content="Position of Gear Center:" Grid.ColumnSpan="2" Height="26" FontWeight="Bold"/>
+                                            <Label x:Name="lblXOffset" Grid.Row="3"  Content="Gear x-offset (inches)"  Height="26" VerticalAlignment="Top"/>
+                                            <TextBox x:Name="txtXCoord" Grid.Row="3" Grid.Column="1" VerticalAlignment="Center"  Height="20"/>
+                                            <Label x:Name="lblYOffset" Grid.Row="4" Content="Gear y-offset (inches)"  Height="26"/>
+                                            <TextBox x:Name="txtYCoord" Grid.Row="4" Grid.Column="1" VerticalAlignment="Center"  Height="20"/>
+                                            <Label x:Name="lblPositionGearMoved" Grid.Row="5" ToolTip="For the (0,0) offset, the gear is positioned so that the tire edge coincides with the edge of the slab." Content="End Position of Gear Center:" Height="26" FontWeight="Bold" Grid.ColumnSpan="2" />
+                                            <Label x:Name="lblXOffsetMoved" Grid.Row="6"  Content="Gear x-offset (inches)" Height="26" />
+                                            <TextBox x:Name="txtXCoordMoved" Text="0" Grid.Row="6" Grid.Column="1" VerticalAlignment="Center"  Height="20"  />
+                                            <Label x:Name="lblYOffsetMoved" Grid.Row="7"  Content="Gear y-offset (inches)" Height="26"  />
+                                            <TextBox x:Name="txtYCoordMoved" Text="0" Grid.Row="7" Grid.Column="1" VerticalAlignment="Center"  Height="20"  />
+                                            <Label x:Name="lblNGearPositons" Grid.Row="8" ToolTip="at least 2 positions to define a moving track " Content="Number of Gear Positions:" Height="26"  FontWeight="Bold" Grid.ColumnSpan="2" />
+                                            <TextBox x:Name="txtNGearPositons" Text="2"  Grid.Row="8" Grid.Column="1" VerticalAlignment="Center" Height="20" />
+                                            <!--<Label x:Name="lblMovingSpeed" Grid.Row="10" Content="Moving Speed (mph)" Height="26" IsEnabled="False" FontWeight="Bold" />-->
+                                            <!--<TextBox x:Name="txtMovingSpeed" Grid.Row="10" Grid.Column="1" VerticalAlignment="Center" Height="20" IsEnabled="False" />  -->
+                                        </Grid>
+                                    </GroupBox>
+                                </Grid>
+
+                            </DockPanel>
+                        </DockPanel>
+
+                    </Grid>
+                </TabItem>
+                <TabItem x:Name="TabPage3" Header="Joint Modeling">
+                    <!--<Grid Background="#FFE5E5E5"/>-->
+                    <DockPanel LastChildFill="True">
+                        <Grid>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="*"/>
+                                <RowDefinition Height="*"/>
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+                            <GroupBox  x:Name="GroupBoxDowel">
+                                <GroupBox.Header>
+                                    <CheckBox  x:Name="chkDowelX" FontWeight="Bold" FontSize="14" Foreground="Brown" Content="X-Direction Dowel Bar Data"/>
+                                </GroupBox.Header>
+                                <Grid>
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="*"/>
+                                        <RowDefinition Height="*"/>
+                                        <RowDefinition Height="*"/>
+                                    </Grid.RowDefinitions>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition/>
+                                    </Grid.ColumnDefinitions>
+                                    <Grid Grid.Row="1">
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition Height="*"/>
+                                            <RowDefinition Height="*"/>
+                                        </Grid.RowDefinitions>
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition/>
+                                            <ColumnDefinition/>
+                                        </Grid.ColumnDefinitions>
+                                        <Label Grid.ColumnSpan="2" x:Name="lblPlacement" HorizontalAlignment="Left" VerticalAlignment="Bottom" FontWeight="Bold" Content="Method of Dowel Bar Placement:"/>
+                                        <RadioButton Grid.Column="0" Grid.Row="1" x:Name="optFreshX" >
+                                            <AccessText TextWrapping="Wrap" Text="Bar placed in fresh concrete"/>
+                                        </RadioButton>
+                                        <RadioButton Grid.Column="1" Grid.Row="1" x:Name="optDrilledX">
+                                            <AccessText TextWrapping="Wrap" Text="Bar placed in drilled holes"/>
+                                        </RadioButton>
+                                    </Grid>
+                                    <Grid>
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition Height="*"/>
+                                            <RowDefinition Height="*"/>
+                                            <RowDefinition Height="*"/>
+                                        </Grid.RowDefinitions>
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition  Width="1.5*"/>
+                                            <ColumnDefinition  Width="*"/>
+                                        </Grid.ColumnDefinitions>
+                                        <Label x:Name="lblDowelDiameterX" Content="Dowel Bar Diameter (in):"/>
+                                        <Label x:Name="lblDowelSpacingX" Grid.Column="0" Grid.Row="1" Content="Dowel Bar Spacing (in):"/>
+                                        <Label x:Name="lblJointOpeningX" Grid.Column="0" Grid.Row="2" Content="Joint Opening (in):"/>
+                                        <Border Padding="3"  Grid.Column="1" Grid.Row="0" >
+                                            <ComboBox x:Name="cmbDowelDiameterX" IsEditable="True" Text="1.0" Height="22" VerticalAlignment="Top" TextBoxBase.TextChanged="ComboBoxX_TextChanged" />
+                                        </Border>
+                                        <Border Padding="3"  Grid.Column="1" Grid.Row="1">
+                                            <ComboBox  x:Name="cmbDowelSpacingX" IsEditable="True" Text="15" TextBoxBase.TextChanged="ComboBoxX_TextChanged"/>
+                                        </Border>
+                                        <Border Padding="3"  Grid.Column="1" Grid.Row="2">
+                                            <ComboBox  x:Name="cmbJointOpeningX" IsEditable="True" Text="0.375" TextBoxBase.TextChanged="ComboBoxX_TextChanged"/>
+                                        </Border>
+                                    </Grid>
+                                    <Grid Grid.Row="2">
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition Height="*"/>
+                                            <RowDefinition Height="*"/>
+                                        </Grid.RowDefinitions>
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition/>
+                                        </Grid.ColumnDefinitions>
+                                        <Label  x:Name="lblEquivalJoint" HorizontalAlignment="Left" VerticalAlignment="Bottom" FontWeight="Bold" Content="Equivalent Joint Stiffness (psi):"/>
+                                        <Border  Grid.Row="1" Padding="5,5,100,5">
+                                            <TextBox x:Name="txtJntStfX" Height="30" Text="100000"/>
+                                        </Border>
+                                    </Grid>
+                                </Grid>
+                            </GroupBox>
+                            <GroupBox Grid.Column="1" Grid.Row="0"  x:Name="GroupBoxDowelX">
+                                <GroupBox.Header>
+                                    <CheckBox  x:Name="chkDowelY" FontWeight="Bold" FontSize="14" Foreground="Navy" Content="Y-Direction Dowel Bar Data"/>
+                                </GroupBox.Header>
+                                <Grid>
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="*"/>
+                                        <RowDefinition Height="*"/>
+                                        <RowDefinition Height="*"/>
+                                    </Grid.RowDefinitions>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition/>
+                                    </Grid.ColumnDefinitions>
+                                    <Grid>
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition Height="*"/>
+                                            <RowDefinition Height="*"/>
+                                            <RowDefinition Height="*"/>
+                                        </Grid.RowDefinitions>
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition  Width="1.5*"/>
+                                            <ColumnDefinition  Width="*"/>
+                                        </Grid.ColumnDefinitions>
+                                        <Label x:Name="lblDowelDiameterY" Content="Dowel Bar Diameter (in):"/>
+                                        <Label x:Name="lblDowelSpacingY" Grid.Column="0" Grid.Row="1" Content="Dowel Bar Spacing (in):"/>
+                                        <Label x:Name="lblJointOpeningY" Grid.Column="0" Grid.Row="2" Content="Joint Opening (in):"/>
+                                        <Border Padding="3"  Grid.Column="1" Grid.Row="0" >
+                                            <ComboBox x:Name="cmbDowelDiameterY" IsEditable="True" Text="1.0" Height="22" VerticalAlignment="Bottom" TextBoxBase.TextChanged="ComboBoxY_TextChanged" />
+                                        </Border>
+                                        <Border Padding="3"  Grid.Column="1" Grid.Row="1" >
+                                            <ComboBox x:Name="cmbDowelSpacingY" IsEditable="True" Text="15" TextBoxBase.TextChanged="ComboBoxY_TextChanged"/>
+                                        </Border>
+                                        <Border Padding="3"  Grid.Column="1" Grid.Row="2" >
+                                            <ComboBox x:Name="cmbJointOpeningY" IsEditable="True" Text="0.375" TextBoxBase.TextChanged="ComboBoxY_TextChanged"/>
+                                        </Border>
+                                    </Grid>
+                                    <Grid Grid.Row="1">
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition Height="*"/>
+                                            <RowDefinition Height="*"/>
+                                        </Grid.RowDefinitions>
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition/>
+                                            <ColumnDefinition/>
+                                        </Grid.ColumnDefinitions>
+                                        <Label Grid.ColumnSpan="2" x:Name="lblPlacementX" HorizontalAlignment="Left" VerticalAlignment="Bottom" FontWeight="Bold" Content="Method of Dowel Bar Placement:"/>
+                                        <RadioButton Grid.Column="0" Grid.Row="1" x:Name="optFreshY">
+                                            <AccessText TextWrapping="Wrap" Text="Bar placed in fresh concrete"/>
+                                        </RadioButton>
+                                        <RadioButton Grid.Column="1" Grid.Row="1" x:Name="optDrilledY">
+                                            <AccessText TextWrapping="Wrap" Text="Bar placed in drilled holes"/>
+                                        </RadioButton>
+                                    </Grid>
+                                    <Grid Grid.Row="2">
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition Height="*"/>
+                                            <RowDefinition Height="*"/>
+                                        </Grid.RowDefinitions>
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition/>
+                                        </Grid.ColumnDefinitions>
+                                        <Label  x:Name="lblEquivalJointY" HorizontalAlignment="Left" VerticalAlignment="Bottom" FontWeight="Bold" Content="Equivalent Joint Stiffness (psi):"/>
+                                        <Border  Grid.Row="1" Padding="5,5,100,5">
+                                            <TextBox x:Name="txtJntStfY" Height="30" Text="100000"/>
+                                        </Border>
+                                    </Grid>
+                                </Grid>
+                            </GroupBox>
+                            <GroupBox Grid.Column="0" Grid.Row="1"  x:Name="GroupBoxBC">
+                                <GroupBox.Header>
+                                    <CheckBox  x:Name="chkBoundaryX" FontWeight="Bold" FontSize="14" Foreground="Brown" Content="X-Direction Spring Constraint"/>
+                                </GroupBox.Header>
+                                <Grid>
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="30"/>
+                                        <RowDefinition Height="*"/>
+                                    </Grid.RowDefinitions>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition/>
+                                    </Grid.ColumnDefinitions>
+                                    <Label  x:Name="lblEquivalBound" HorizontalAlignment="Left" VerticalAlignment="Top" FontWeight="Bold" Content="Equivalent Joint Stiffness (psi):"/>
+                                    <Border Grid.Row="1" Padding="5,5,100,5" >
+                                        <TextBox Height="30" VerticalAlignment="Top" x:Name="txtEdgStfX" Text="1000"/>
+                                    </Border>
+                                </Grid>
+
+
+                            </GroupBox>
+                            <GroupBox Grid.Column="1" Grid.Row="1" x:Name="GroupBoxBCY">
+                                <GroupBox.Header>
+                                    <CheckBox  x:Name="chkBoundaryY" FontWeight="Bold" FontSize="14" Foreground="Navy" Content="Y-Direction Spring Constraint"/>
+                                </GroupBox.Header>
+                                <Grid>
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="30"/>
+                                        <RowDefinition Height="*"/>
+                                    </Grid.RowDefinitions>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition/>
+                                    </Grid.ColumnDefinitions>
+                                    <Label  x:Name="lblEquivalBoundY" HorizontalAlignment="Left" VerticalAlignment="Top" FontWeight="Bold" Content="Equivalent Joint Stiffness (psi):"/>
+                                    <Border Grid.Row="1" Padding="5,5,100,5" >
+                                        <TextBox Height="30" VerticalAlignment="Top" x:Name="txtEdgStfY" Text="1000"/>
+                                    </Border>
+                                </Grid>
+                            </GroupBox>
+                            <DockPanel Grid.Column="2" Grid.Row="0" Width="250" Height="250" Margin="5,13,6,13">
+                                <Label DockPanel.Dock="Bottom" HorizontalAlignment="Center" FontWeight="Bold" FontSize="14" Content="Gear Position"/>
+                                <Border BorderThickness="2"
+                                        BorderBrush="Black"
+                                        Background="LightGray">
+                                    <Canvas x:Name="picJoint" Background="LightGoldenrodYellow" Width="246" Height="217" >
+                                        <Label x:Name="lblY2" Content="Y" Canvas.Left="10" Canvas.Top="10"/>
+                                        <Label x:Name="lblX2" Content="X" Canvas.Left="220" Canvas.Top="179"/>
+                                    </Canvas>
+                                </Border>
+
+                            </DockPanel>
+                            <DockPanel Grid.Column="2" Grid.Row="1" >
+                                <DockPanel DockPanel.Dock="Bottom">
+                                    <Grid Margin="0,0,0,10">
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="*"/>
+                                            <ColumnDefinition Width="*"/>
+                                            <ColumnDefinition Width="75"/>
+                                            <ColumnDefinition Width="75"/>
+                                        </Grid.ColumnDefinitions>
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition/>
+                                        </Grid.RowDefinitions>
+                                        <Border Grid.Column="2" Padding="5,5,5,0">
+                                            <Button Height="40" Content="Help"  x:Name="btnHelpT3"/>
+                                        </Border>
+                                        <Border Grid.Column="3" Padding="5,5,5,0">
+                                            <Button x:Name="btnExitT3" Content="Exit"/>
+                                        </Border>
+                                    </Grid>
+                                </DockPanel>
+                                <DockPanel LastChildFill="True">
+                                    <Border Margin="0,10,0,100">
+                                        <Button x:Name="btnRestore" Width="161" Height="41" Content="Restore Defaults"/>
+                                    </Border>
+                                </DockPanel>
+                            </DockPanel>
+                        </Grid>
+                    </DockPanel>
+                </TabItem>
+                <TabItem x:Name="TabPage4" Header="3D Mesh Generation" >
+                    <!--<Grid Background="#FFE5E5E5"/>-->
+                    <DockPanel LastChildFill="True">
+                        <DockPanel DockPanel.Dock="Right" LastChildFill="True" Width="300">
+                            <DockPanel DockPanel.Dock="Top">
+                                <Grid Margin="0,5,0,0">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition/>
+                                        <ColumnDefinition/>
+                                    </Grid.ColumnDefinitions>
+                                    <Border Padding="5">
+                                        <Button x:Name="btnSaveJob" Height="40" Content="_Save Job" Margin="0,20,0,-20"/>
+                                    </Border>
+                                    <Border Grid.Column="1" Padding="5">
+                                        <Button x:Name="btnRertrieveJob" Content="_Retrieve Job" Margin="0,20,0,-20"/>
+                                    </Border>
+                                </Grid>
+                            </DockPanel>
+
+                            <DockPanel DockPanel.Dock="Bottom" Height="360">
+                                <Grid Margin="0,0,0,10">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="105*"/>
+                                        <ColumnDefinition Width="150"/>
+                                    </Grid.ColumnDefinitions>
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="*"/>
+                                        <RowDefinition Height="*"/>
+                                        <RowDefinition Height="*"/>
+                                        <RowDefinition Height="*"/>
+                                        <RowDefinition Height="*"/>
+                                        <RowDefinition Height="*"/>
+                                    </Grid.RowDefinitions>
+                                    <Border Padding="5" >
+                                        <Button x:Name="btnMesh" Height="40" Content="Create _Mesh"  />
+                                    </Border>
+                                    <Border Grid.Column="0" Grid.Row="1" Padding="5">
+                                        <Button x:Name="btnAnalysis" Height="40" Content="Run _Analysis" />
+                                    </Border>
+
+                                    <Label x:Name="lblAnalysis" Height="32" Content="ⓘ" FontWeight="Bold" FontSize="20"  Margin="119,11.5,0,15" Grid.Row="1" />
+
+                                    <Border Grid.Column="0" Grid.Row="2" Padding="5">
+                                        <Button x:Name="btnNIKEPLOT" Height="40" Content="Run NIKE_PLOT" Visibility="Hidden" />
+                                    </Border>
+                                    <Border Grid.Column="0" Grid.Row="3" Padding="5" >
+                                        <Button x:Name="btnProcessStress" Height="40" Content="Process Stress"  />
+                                    </Border>
+                                    <Grid Grid.Column="1" Grid.Row="5">
+                                        <Grid>
+                                            <Grid.ColumnDefinitions>
+                                                <ColumnDefinition/>
+                                                <ColumnDefinition/>
+                                            </Grid.ColumnDefinitions>
+                                            <Grid.RowDefinitions>
+                                                <RowDefinition/>
+                                            </Grid.RowDefinitions>
+                                            <Border Padding="5,5,5,0">
+                                                <Button Height="40" Content="Help"  x:Name="btnHelpT4"/>
+                                            </Border>
+                                            <Border Grid.Column="1" Padding="5,5,5,0">
+                                                <Button x:Name="btnExitT4" Content="Exit" HorizontalAlignment="Right" Width="65" Height="40"/>
+                                            </Border>
+                                        </Grid>
+                                    </Grid>
+                                </Grid>
+                            </DockPanel>
+
+                            <DockPanel LastChildFill="True" Margin="0,40,0,00">
+                                <!--<DockPanel  DockPanel.Dock="Top" Height="56">-->
+                                <Label DockPanel.Dock="Top" Content="Job File Directory" HorizontalAlignment="Stretch" HorizontalContentAlignment="Center" Height="28" FontWeight="Bold" Background="#FFFFFFC3" Margin="0" BorderBrush="#FFABADB3" BorderThickness="1" Visibility="Hidden" />
+                                <TextBox DockPanel.Dock="Top"  x:Name="txtJobDirectory"  TextWrapping="Wrap" AcceptsReturn="True" ScrollViewer.VerticalScrollBarVisibility="Auto" Background="White" Visibility="Hidden"/>
+                                <!--</DockPanel>-->
+                            </DockPanel>
+                        </DockPanel>
+                        <DockPanel DockPanel.Dock="left">
+                            <GroupBox x:Name="fraFilNm" Header="" Margin="0,1,0,-1.5">
+                                <DockPanel>
+                                    <DockPanel  DockPanel.Dock="Bottom"  Margin="0,10,0,0">
+                                        <Label DockPanel.Dock="Top" Content="File Name" HorizontalAlignment="Stretch" HorizontalContentAlignment="Center" Height="26" FontWeight="Bold" Background="#FFFFFFC3" Margin="0" BorderBrush="#FFABADB3" BorderThickness="1" Visibility="Hidden" />
+                                        <TextBox DockPanel.Dock="Top"  x:Name="txtFilNm" IsEnabled="False" Visibility="Hidden" />
+                                        <Label DockPanel.Dock="Bottom" x:Name="lblInfo" FontSize="14" Height="30"></Label>
+                                    </DockPanel>
+                                    <DockPanel LastChildFill="True" Margin="0,10,0,0">
+                                        <Label DockPanel.Dock="Top" Content="FEAFAA Working Directory" HorizontalAlignment="Stretch" HorizontalContentAlignment="Center" Height="30" FontWeight="Bold" Background="#FFFFFFC3" Margin="0" BorderBrush="#FFABADB3" BorderThickness="1" />
+                                        <ScrollViewer>
+                                            <local:DirectoryList x:Name="Dir1"/>
+                                        </ScrollViewer>
+                                    </DockPanel>
+                                </DockPanel>
+                            </GroupBox>
+                        </DockPanel>
+                    </DockPanel>
+                </TabItem>
+            </TabControl>
+        </DockPanel>
+    </Grid>
+</Window>

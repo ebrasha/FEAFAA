@@ -1,0 +1,270 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{8C23CBF8-9C32-47F3-A5AE-3672B935C486}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>FEMClassLib</RootNamespace>
+    <AssemblyName>FEMClassLib</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>Windows</MyType>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>FEMClassLib.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>FEMClassLib.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Com\clsAdios.vb" />
+    <Compile Include="Com\clsAncon.vb" />
+    <Compile Include="Com\clsAzero.vb" />
+    <Compile Include="Com\clsBlkcpy.vb" />
+    <Compile Include="Com\clsCom.vb" />
+    <Compile Include="Com\clsComSub.vb" />
+    <Compile Include="Com\clsComvari.vb" />
+    <Compile Include="Com\clsGettime.vb" />
+    <Compile Include="Com\clsSign.vb" />
+    <Compile Include="Com\clsUnpkid.vb" />
+    <Compile Include="FAASR\clsTransData.vb" />
+    <Compile Include="FAASR\clsWriteNike.vb" />
+    <Compile Include="FAASR\clsDelAtom.vb" />
+    <Compile Include="FAASR\clsEraseInput.vb" />
+    <Compile Include="FAASR\clsEraseOutput.vb" />
+    <Compile Include="FAASR\clsInitialSet.vb" />
+    <Compile Include="FAASR\clsFAASR3D.vb" />
+    <Compile Include="FAASR\clsSetStep1.vb" />
+    <Compile Include="FAASR\clsSetStep2.vb" />
+    <Compile Include="FAASR\clsWinYield.vb" />
+    <Compile Include="FAASR\modWrite.vb" />
+    <Compile Include="Input\clsAreal.vb" />
+    <Compile Include="Input\clsBlck83.vb" />
+    <Compile Include="Input\clsBlkmax.vb" />
+    <Compile Include="Input\clsChardx.vb" />
+    <Compile Include="Input\clsChgint.vb" />
+    <Compile Include="Input\clsCountn.vb" />
+    <Compile Include="Input\clsCounts.vb" />
+    <Compile Include="Input\clsCrossi.vb" />
+    <Compile Include="Input\clsElmnde.vb" />
+    <Compile Include="Input\clsEqnum.vb" />
+    <Compile Include="Input\clsFunct.vb" />
+    <Compile Include="Input\clsIntsld.vb" />
+    <Compile Include="Input\clsMatin.vb" />
+    <Compile Include="Input\clsModstf.vb" />
+    <Compile Include="Input\clsInput.vb" />
+    <Compile Include="Input\clsNode.vb" />
+    <Compile Include="Input\clsNodesm.vb" />
+    <Compile Include="Input\clsNsgmnt.vb" />
+    <Compile Include="Input\clsPrintm.vb" />
+    <Compile Include="Input\clsPtimei.vb" />
+    <Compile Include="Input\clsSetse1.vb" />
+    <Compile Include="Input\clsSillin.vb" />
+    <Compile Include="Input\clsSlavi0.vb" />
+    <Compile Include="Input\clsSlavi1.vb" />
+    <Compile Include="Input\clsSlavi2.vb" />
+    <Compile Include="Input\clsSlavin.vb" />
+    <Compile Include="Input\clsSlinit.vb" />
+    <Compile Include="Input\clsSlvage.vb" />
+    <Compile Include="Input\clsSt.vb" />
+    <Compile Include="Input\clsStiffs.vb" />
+    <Compile Include="Input\clsTestnd.vb" />
+    <Compile Include="Input\clsVolint.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Initial\clsBasis4.vb" />
+    <Compile Include="Initial\clsBasis8.vb" />
+    <Compile Include="Initial\clsCklc.vb" />
+    <Compile Include="Initial\clsColht.vb" />
+    <Compile Include="Initial\clsGethexg.vb" />
+    <Compile Include="Initial\clsIn3dh.vb" />
+    <Compile Include="Initial\clsIn3dhhv.vb" />
+    <Compile Include="Initial\clsInitde.vb" />
+    <Compile Include="Initial\clsInitial.vb" />
+    <Compile Include="Initial\clsInterp.vb" />
+    <Compile Include="Initial\clsIntial.vb" />
+    <Compile Include="Initial\clsLdcset.vb" />
+    <Compile Include="Initial\clsReinit.vb" />
+    <Compile Include="Initial\clsS1int.vb" />
+    <Compile Include="Initial\clsStrint.vb" />
+    <Compile Include="PrintOut\cls.getstr.vb" />
+    <Compile Include="PrintOut\cls.header.vb" />
+    <Compile Include="PrintOut\cls.n3dhsp.vb" />
+    <Compile Include="PrintOut\cls.oocbsh.vb" />
+    <Compile Include="PrintOut\cls.prde.vb" />
+    <Compile Include="PrintOut\cls.PrintOut.vb" />
+    <Compile Include="PrintOut\cls.prtdv.vb" />
+    <Compile Include="PrintOut\cls.prtout.vb" />
+    <Compile Include="PrintOut\cls.prtrf.vb" />
+    <Compile Include="PrintOut\cls.prtrs.vb" />
+    <Compile Include="PrintOut\cls.s4out.vb" />
+    <Compile Include="PrintOut\cls.s6out.vb" />
+    <Compile Include="PrintOut\cls.stmax.vb" />
+    <Compile Include="PrintOut\cls.stmaxp.vb" />
+    <Compile Include="PrintOut\cls.stnod.vb" />
+    <Compile Include="PrintOut\cls.tecplot.vb" />
+    <Compile Include="PrintOut\cls.tecstress.vb" />
+    <Compile Include="solve\clsAsmrhs.vb" />
+    <Compile Include="solve\clsAuto.vb" />
+    <Compile Include="solve\clsBasisf.vb" />
+    <Compile Include="solve\clsBdbic1.vb" />
+    <Compile Include="solve\clsBdbic2.vb" />
+    <Compile Include="solve\clsBdecay.vb" />
+    <Compile Include="solve\clsBdg53.vb" />
+    <Compile Include="solve\clsBdg83.vb" />
+    <Compile Include="solve\clsBdscal.vb" />
+    <Compile Include="solve\clsBfgs.vb" />
+    <Compile Include="solve\clsBsinxbs0.vb" />
+    <Compile Include="solve\clsBsolvr.vb" />
+    <Compile Include="solve\clsBtdb.vb" />
+    <Compile Include="solve\clsChsky06.vb" />
+    <Compile Include="solve\clsCndres.vb" />
+    <Compile Include="solve\clsCross.vb" />
+    <Compile Include="solve\clsCskydg.vb" />
+    <Compile Include="solve\clsDispbc.vb" />
+    <Compile Include="solve\clsDispde.vb" />
+    <Compile Include="solve\clsDotprd.vb" />
+    <Compile Include="solve\clsDscrte.vb" />
+    <Compile Include="solve\clsElstf.vb" />
+    <Compile Include="solve\clsFcalc.vb" />
+    <Compile Include="solve\clsFdot.vb" />
+    <Compile Include="solve\clsFe3dic.vb" />
+    <Compile Include="solve\clsFstif0.vb" />
+    <Compile Include="solve\clsFstif1.vb" />
+    <Compile Include="solve\clsFstif2.vb" />
+    <Compile Include="solve\clsFstiff.vb" />
+    <Compile Include="solve\clsFull33.vb" />
+    <Compile Include="solve\clsFupdt.vb" />
+    <Compile Include="solve\clsGetvrt.vb" />
+    <Compile Include="solve\clsIntrfc.vb" />
+    <Compile Include="solve\clsIntrpm.vb" />
+    <Compile Include="solve\clsInvert.vb" />
+    <Compile Include="solve\clsLdbdy.vb" />
+    <Compile Include="solve\clsLoadcn.vb" />
+    <Compile Include="solve\clsLoadpr.vb" />
+    <Compile Include="solve\clsLudcmp.vb" />
+    <Compile Include="solve\clsLufwbk.vb" />
+    <Compile Include="solve\clsLufwbv.vb" />
+    <Compile Include="solve\clsMatv15.vb" />
+    <Compile Include="solve\clsMatv24.vb" />
+    <Compile Include="solve\clsMoveii.vb" />
+    <Compile Include="solve\clsMustpt.vb" />
+    <Compile Include="solve\clsNstiff.vb" />
+    <Compile Include="solve\clsPeval.vb" />
+    <Compile Include="solve\clsPrecon.vb" />
+    <Compile Include="solve\clsPtime.vb" />
+    <Compile Include="solve\clsQuasin.vb" />
+    <Compile Include="solve\clsRecvri.vb" />
+    <Compile Include="solve\clsRotat1.vb" />
+    <Compile Include="solve\clsRotat2.vb" />
+    <Compile Include="solve\clsRotstr.vb" />
+    <Compile Include="solve\clsS1main.vb" />
+    <Compile Include="solve\clsS4main.vb" />
+    <Compile Include="solve\clsSinf.vb" />
+    <Compile Include="solve\clsSlave1.vb" />
+    <Compile Include="solve\clsSlave2.vb" />
+    <Compile Include="solve\clsSolide.vb" />
+    <Compile Include="solve\clsSolve-subs.vb" />
+    <Compile Include="solve\clsSolveMain.vb" />
+    <Compile Include="solve\clsSpring.vb" />
+    <Compile Include="solve\clsSsblck.vb" />
+    <Compile Include="solve\clsSslcs.vb" />
+    <Compile Include="solve\clsStatcn.vb" />
+    <Compile Include="solve\clsStfic.vb" />
+    <Compile Include="solve\clsStfinf.vb" />
+    <Compile Include="solve\clsStric1.vb" />
+    <Compile Include="solve\clsStric2.vb" />
+    <Compile Include="solve\clsSymm33.vb" />
+    <Compile Include="solve\clsTemth.vb" />
+    <Compile Include="solve\clsTran23.vb" />
+    <Compile Include="solve\clsTran53.vb" />
+    <Compile Include="solve\clsTran83.vb" />
+    <Compile Include="solve\clsTranfc.vb" />
+    <Compile Include="solve\clsUnpci.vb" />
+    <Compile Include="solve\clsUpdate.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

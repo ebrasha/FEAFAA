@@ -1,0 +1,3 @@
+C:\bit9prog\dev\FEAFAA ALL\FEAFAA 2020.11.02\FEAFAA 3.0 005\SetupFEAFAA\bin\Debug\cab1.cab
+C:\bit9prog\dev\FEAFAA ALL\FEAFAA 2020.11.02\FEAFAA 3.0 005\SetupFEAFAA\bin\Debug\SetupFEAFAA.msi
+C:\bit9prog\dev\FEAFAA ALL\FEAFAA 2020.11.02\FEAFAA 3.0 005\SetupFEAFAA\bin\Debug\SetupFEAFAA.wixpdb
